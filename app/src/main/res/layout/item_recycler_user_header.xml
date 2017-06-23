@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/user_icon_layout"
+    android:layout_width="@dimen/user_avatar_width"
+    android:layout_height="@dimen/user_avatar_height"
+    android:layout_centerVertical="true"
+    android:layout_marginTop="@dimen/common_activity_padding_16">
+
+    <com.netease.nim.uikit.common.ui.imageview.HeadImageView
+        android:id="@+id/user_icon"
+        android:layout_width="@dimen/user_avatar_width"
+        android:layout_height="@dimen/user_avatar_height"
+        android:layout_marginBottom="@dimen/common_activity_padding_5"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/icon_avatar_default" />
+
+    <ImageView
+        android:id="@+id/user_type_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/common_activity_padding_5"
+        android:src="@mipmap/icon_user_mark_favourite" />
+
+</RelativeLayout>
+
+

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/live_audience_gift_rl"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg_big_scene"
+    android:layout_height="match_parent">
+
+    <com.shaojun.widget.tablayout.SlidingTabLayout
+        android:id="@+id/gift_sliding_tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"
+        android:layout_gravity="center"
+        android:background="@color/layout_item_color"
+        tl:tl_divider_color="@color/default_stroke_color"
+        tl:tl_divider_padding="0dp"
+        tl:tl_divider_width="0dp"
+        tl:tl_indicator_color="@color/a1_color"
+        tl:tl_indicator_height="1.5dp"
+        tl:tl_indicator_width="100dp"
+        tl:tl_indicator_width_equal_title="true"
+        tl:tl_tab_padding="10dp"
+        tl:tl_tab_space_equal="true"
+        tl:tl_textSelectColor="@color/white"
+        tl:tl_textUnselectColor="@color/white"
+        tl:tl_textsize="@dimen/text_size_17"
+        tl:tl_underline_color="@color/default_stroke_color"
+        tl:tl_underline_height="1dp" />
+
+    <com.shangshow.showlive.common.widget.viewpager.CustomViewPager
+        android:id="@+id/gift_tab_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:persistentDrawingCache="animation" />
+
+    <RelativeLayout
+        android:id="@+id/rl_live_audience_addmoney"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/live_charge_text_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:paddingLeft="10dp"
+            android:text="充值："
+            android:textColor="@color/blue_04"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:id="@+id/live_charge_count_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_toRightOf="@id/live_charge_text_tv"
+            android:paddingLeft="5dp"
+            android:text="0"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_16" />
+
+        <ImageView
+            android:id="@+id/diamand_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_toRightOf="@id/live_charge_count_tv"
+            android:paddingLeft="5dp"
+            android:src="@mipmap/icon_personal_diamond" />
+
+        <ImageView
+            android:id="@+id/nev_charge_diamand_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_toRightOf="@id/diamand_image"
+            android:paddingLeft="5dp"
+            android:src="@drawable/nev_charge" />
+
+
+        <!--<Button-->
+        <!--android:id="@+id/live_send_gift_btn"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_marginRight="10dp"-->
+        <!--android:background="@drawable/selector_btn_a1_corner"-->
+        <!--android:gravity="center"-->
+        <!--android:paddingLeft="10dp"-->
+        <!--android:paddingRight="10dp"-->
+        <!--android:text="发送"-->
+        <!--android:textColor="@color/white"-->
+        <!--android:textSize="@dimen/text_size_16" />-->
+    </RelativeLayout>
+</LinearLayout>

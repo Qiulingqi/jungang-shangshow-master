@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="9">
+
+    <LinearLayout
+        android:id="@+id/live_audience_widget_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="9"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/live_audience_header_ll"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            >
+
+            <include layout="@layout/layout_live_audience_header" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/live_audience_gift_animation_ll"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <include
+                    android:id="@+id/gift_animation_view_up"
+                    layout="@layout/layout_gift_animation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <include
+                    android:id="@+id/gift_animation_view_down"
+                    layout="@layout/layout_gift_animation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/gift_animation_view_up" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/live_audience_message_and_like_ll"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2">
+
+            <include layout="@layout/layout_live_message_and_like" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/live_audience_control_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include layout="@layout/layout_live_audience_control" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <include
+        layout="@layout/layout_live_message_text_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+
+    <include
+        layout="@layout/layout_live_reply_private_letter"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:layout_alignParentBottom="true" />
+
+    <include
+        layout="@layout/layout_live_private_letter"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:layout_alignParentBottom="true" />
+
+
+    <include
+        layout="@layout/layout_live_audience_gift"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone" />
+
+
+    <TextView
+        android:id="@+id/prepared_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@color/transparent"
+        android:gravity="center"
+        android:text="准备中，请等待..."
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        android:visibility="visible" />
+
+    <include layout="@layout/live_animate_image_layout" />
+
+    <include layout="@layout/live_audience_load_finish" />
+
+    <RelativeLayout
+        android:id="@+id/live_danmu_rl"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_centerInParent="true"
+        android:visibility="gone">
+
+        <include layout="@layout/layout_live_danmu" />
+    </RelativeLayout>
+
+    <include layout="@layout/layout_live_audience_stop_live" />
+
+</RelativeLayout>

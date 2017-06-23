@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/layout_item_black_color"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/item_left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/layout_item_color"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/common_activity_padding_10"
+        android:paddingLeft="@dimen/common_activity_padding_15"
+        android:paddingRight="@dimen/common_activity_padding_15"
+        android:paddingTop="@dimen/common_activity_padding_10">
+
+        <ImageView
+            android:id="@+id/item_goodslist_image"
+            style="@style/TextStyle_SingleLine"
+            android:layout_width="@dimen/common_list_item_height_120"
+            android:layout_height="@dimen/common_list_item_height_90"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:scaleType="fitXY" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/common_activity_padding_10"
+            android:layout_toRightOf="@+id/item_goodslist_image"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/item_goodslist_name"
+                style="@style/TextViewGrayText_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="sdsd" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/common_activity_padding_5"
+                android:layout_marginTop="@dimen/common_activity_padding_5">
+
+                <TextView
+                    style="@style/TextViewGrayText_14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="售价:" />
+
+                <TextView
+                    android:id="@+id/item_goodslist_price"
+                    style="@style/TextViewSecondThemeText_16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ssad" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/item_goodslist_no"
+                style="@style/TextViewGrayText_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <com.shangshow.showlive.common.widget.custom.BaseButton
+            android:id="@+id/item_goodslist_check"
+            style="@style/A1ColorBtn_Corner"
+            android:layout_width="@dimen/common_list_item_height_70"
+            android:layout_height="@dimen/common_list_item_height_30"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/shape_a1_corner"
+            android:text="查看"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/item_right"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/tv_goodslist_delete"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:background="@color/color_red_pay"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="删除"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+</LinearLayout>

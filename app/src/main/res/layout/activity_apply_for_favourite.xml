@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <com.shangshow.showlive.widget.RecyclerScrollerView
+        android:id="@+id/favourite_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/apply_for_favourite_Submit"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/dp15"
+            android:paddingLeft="@dimen/common_activity_padding_15"
+            android:paddingRight="@dimen/common_activity_padding_16">
+
+            <LinearLayout
+                android:id="@+id/apply_for_favourite_Name_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/common_activity_padding_10"
+                android:background="@drawable/shape_translucence_corner"
+                android:orientation="vertical">
+
+                <com.shangshow.showlive.common.widget.custom.ClearableEditTextWithIcon
+                    android:id="@+id/apply_for_favourite_Name"
+                    style="@style/ClearEditTextStyle"
+                    android:layout_gravity="center_horizontal"
+                    android:hint="真实姓名" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/apply_for_favourite_IdCard_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/apply_for_favourite_Name_layout"
+                android:layout_marginTop="@dimen/common_activity_padding_10"
+                android:background="@drawable/shape_translucence_corner"
+                android:orientation="vertical">
+
+                <com.shangshow.showlive.common.widget.custom.ClearableEditTextWithIcon
+                    android:id="@+id/apply_for_favourite_IdCard"
+                    style="@style/ClearEditTextStyle"
+                    android:layout_gravity="center_horizontal"
+                    android:hint="身份证号"
+                    android:inputType="number"
+                    android:maxLength="18">
+
+                </com.shangshow.showlive.common.widget.custom.ClearableEditTextWithIcon>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/apply_for_favourite_Mobile_layout"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/apply_for_favourite_IdCard_layout"
+                android:layout_marginTop="@dimen/common_activity_padding_10"
+                android:background="@drawable/shape_translucence_corner"
+                android:orientation="vertical">
+
+                <com.shangshow.showlive.common.widget.custom.ClearableEditTextWithIcon
+                    android:id="@+id/apply_for_favourite_Mobile"
+                    style="@style/ClearEditTextStyle"
+                    android:layout_gravity="center_horizontal"
+                    android:hint="手机号码"
+                    android:inputType="number"
+                    android:maxLength="11">
+
+                </com.shangshow.showlive.common.widget.custom.ClearableEditTextWithIcon>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/apply_for_favourite_Address_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/apply_for_favourite_Mobile_layout"
+                android:layout_marginTop="@dimen/common_activity_padding_10"
+                android:background="@drawable/shape_translucence_corner"
+                android:orientation="vertical">
+
+                <com.shangshow.showlive.common.widget.custom.ClearableEditTextWithIcon
+                    android:id="@+id/apply_for_favourite_Address"
+                    android:layout_gravity="center_horizontal"
+                    style="@style/ClearEditTextStyle"
+                    android:hint="居住地址">
+
+                </com.shangshow.showlive.common.widget.custom.ClearableEditTextWithIcon>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/mark_description_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/apply_for_favourite_Address_layout"
+                android:layout_marginTop="@dimen/common_activity_padding_10"
+                android:background="@drawable/shape_translucence_corner"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:text="选择标签"
+                    android:textColor="@color/gray_10"
+                    android:textSize="@dimen/text_size_18" />
+
+                <com.shangshow.showlive.widget.ListGridView
+                    android:id="@+id/mark_description_recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:verticalSpacing="@dimen/dp08"/>
+
+                <TextView
+                    android:id="@+id/tv_apply_change"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:layout_marginBottom="@dimen/dp08"
+                    android:layout_marginTop="@dimen/dp08"
+                    android:drawableLeft="@drawable/safari_refresh"
+                    android:drawablePadding="@dimen/dp08"
+                    android:gravity="center_vertical"
+                    android:text="换一批"
+                    android:textColor="@color/gray_10"
+                    android:textSize="@dimen/text_size_18" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/text_upload_idcard"
+                style="@style/TextViewWhiteText_16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mark_description_ll"
+                android:layout_marginBottom="@dimen/common_activity_padding_16"
+                android:layout_marginTop="@dimen/common_activity_padding_16"
+                android:text="上传证件照"
+                android:textColor="@color/gray" />
+
+            <RelativeLayout
+                android:id="@+id/apply_for_favourite_image_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/text_upload_idcard"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/apply_for_favourite_license_image_layout"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/shape_apply_for_update">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@mipmap/icon_add1" />
+
+                    <ImageView
+                        android:id="@+id/apply_for_favourite_license_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:scaleType="fitXY" />
+
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/apply_for_favourite_example_image"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="@dimen/common_activity_padding_30"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/apply_favourite_example" />
+
+                <TextView
+                    style="@style/TextViewGrayText_16"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/apply_for_favourite_license_image_layout"
+                    android:layout_marginTop="@dimen/common_activity_padding_5"
+                    android:gravity="center"
+                    android:text="正面" />
+
+                <TextView
+                    style="@style/TextViewGrayText_16"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/apply_for_favourite_example_image"
+                    android:layout_marginTop="@dimen/common_activity_padding_5"
+                    android:gravity="center"
+                    android:text="反面" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/textView"
+                style="@style/TextViewGrayText_14"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/apply_for_favourite_image_layout"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/common_activity_padding_30"
+                android:text="@string/shangxiutv_163_com" />
+
+        </RelativeLayout>
+
+    </com.shangshow.showlive.widget.RecyclerScrollerView>
+
+    <com.shangshow.showlive.common.widget.custom.BaseButton
+        android:id="@+id/apply_for_favourite_Submit"
+        style="@style/A1ColorBtn_Right"
+        android:layout_alignParentBottom="true"
+        android:text="@string/submit_information" />
+</RelativeLayout>

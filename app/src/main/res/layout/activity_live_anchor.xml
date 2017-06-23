@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/live_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.shangshow.showlive.controller.liveshow.live.LiveSurfaceView
+            android:id="@+id/live_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+
+        <com.shangshow.showlive.controller.liveshow.live.OpenGLSurfaceView
+            android:id="@+id/filter_surface_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+
+        <!--<SeekBar-->
+        <!--android:id="@+id/seekBar"-->
+        <!--android:layout_width="200dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginTop="100dp"-->
+        <!--android:max="100"-->
+        <!--android:progressDrawable="@drawable/custom_seekbar"-->
+        <!--android:thumb="@drawable/seekbar_thumb"-->
+        <!--android:minHeight="1.5dp"-->
+        <!--android:maxHeight="1.5dp"-->
+        <!--android:visibility="gone"-->
+        <!--/>-->
+
+    </RelativeLayout>
+
+    <!--<RelativeLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent">-->
+    <!--<com.netease.demo.live.video.NEVideoView-->
+    <!--android:id="@+id/video_view"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_centerInParent="true" />-->
+    <!--&lt;!&ndash;<com.shangshow.showlive.controller.liveshow.live.LiveSurfaceView&ndash;&gt;-->
+    <!--&lt;!&ndash;android:id="@+id/live_view"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_centerInParent="true" />&ndash;&gt;-->
+
+    <!--</RelativeLayout>-->
+
+    <com.shangshow.showlive.controller.liveshow.widget.LiveAnchorWidget
+        android:id="@+id/live_anchor_widget"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <!--<include-->
+    <!--android:id="@+id/live_widget"-->
+    <!--layout="@layout/layout_live_anchor_widget" />-->
+
+</RelativeLayout>

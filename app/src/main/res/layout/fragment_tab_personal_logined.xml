@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.shangshow.showlive.common.LogicView.UserInfoView
+        android:id="@+id/personal_memberinfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_menu_layout" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_activity_padding_1"
+        android:background="@color/default_stroke_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_list_item_height_50"
+        android:background="@color/layout_item_black_color"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/personal_create_live"
+            style="@style/TextViewGrayText_16"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/common_activity_padding_5"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="发起直播" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/default_stroke_color" />
+
+        <TextView
+            android:id="@+id/personal_upload_video"
+            style="@style/TextViewGrayText_16"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/common_activity_padding_5"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="上传视频" />
+    </LinearLayout>
+
+
+    <com.shangshow.showlive.common.widget.custom.CustomGridView
+        android:id="@+id/personal_function_gridview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/common_activity_padding_5"
+        android:background="@color/default_stroke_color"
+        android:horizontalSpacing="@dimen/common_activity_padding_1"
+        android:numColumns="4"
+        android:paddingBottom="@dimen/common_activity_padding_1"
+        android:paddingTop="@dimen/common_activity_padding_1"
+        android:verticalSpacing="@dimen/common_activity_padding_1" />
+
+
+</LinearLayout>

@@ -1,0 +1,84 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/common_list_item_height_60"
+    android:background="@color/layout_item_black_color"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/common_activity_padding_10"
+    android:paddingRight="@dimen/common_activity_padding_10">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="2"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <RelativeLayout
+                android:id="@+id/user_icon_layout"
+                android:layout_width="@dimen/user_avatar_width"
+                android:layout_height="@dimen/user_avatar_height"
+                android:layout_gravity="left"
+                android:layout_marginLeft="5dp"
+                android:gravity="center_vertical">
+                <com.netease.nim.uikit.common.ui.imageview.HeadImageView
+                    android:id="@+id/user_icon_myreward"
+                    android:layout_width="@dimen/user_avatar_width"
+                    android:layout_height="@dimen/user_avatar_height"
+                    android:layout_marginBottom="@dimen/common_activity_padding_5"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/icon_avatar_default" />
+
+                <ImageView
+                    android:id="@+id/user_type_icon_myreward"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="@dimen/common_activity_padding_5"
+                    android:src="@mipmap/icon_user_mark_favourite" />
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/myreward_mark_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="旅游达人"
+                android:textColor="@color/gray_10"
+                android:textSize="@dimen/text_size_16" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="right">
+
+            <TextView
+                android:id="@+id/myreward_dcount_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12340"
+                android:textColor="@color/color_yellow_FAEC55"
+                android:textSize="@dimen/text_size_16" />
+
+            <ImageView
+                android:id="@+id/myreward_dcount_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:src="@mipmap/icon_personal_diamond" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+

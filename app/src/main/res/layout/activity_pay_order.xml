@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_translucence_rightangle"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp15"
+        android:paddingRight="@dimen/dp15">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/person_acount"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/sp16" />
+
+        <TextView
+            android:id="@+id/tv_pay_order_acount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="123456789012"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/sp16" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp0.5"
+        android:background="@android:color/black" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp15"
+        android:paddingRight="@dimen/dp15">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/person_sum"
+            android:textColor="@color/color_yellow_FAEC55"
+            android:textSize="@dimen/sp16" />
+
+        <TextView
+            android:id="@+id/tv_pay_order_sum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="￥3000"
+            android:textColor="@color/color_yellow_FAEC55"
+            android:textSize="@dimen/sp16" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@android:color/black"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dp15"
+        android:text="@string/person_pay_way"
+        android:textColor="@color/gray" />
+
+    <LinearLayout
+        android:id="@+id/ll_pay_order_weixin"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp15"
+        android:paddingRight="@dimen/dp15">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/dp30"
+                android:layout_height="@dimen/dp30"
+                android:background="@drawable/weixin"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp15"
+                android:text="@string/person_weixin_pay"
+                android:textColor="@color/color_yellow_FAEC55"
+                android:textSize="@dimen/sp16" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_pay_order_weixin"
+            android:layout_width="@dimen/dp25"
+            android:layout_height="@dimen/dp25"
+            android:background="@drawable/xuanzhong" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp0.5"
+        android:background="@android:color/black" />
+
+    <LinearLayout
+        android:id="@+id/ll_pay_order_zhifubao"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp15"
+        android:paddingRight="@dimen/dp15">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/dp30"
+                android:layout_height="@dimen/dp30"
+                android:background="@drawable/zhifubao"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp15"
+                android:text="@string/person_zhifubao_pay"
+                android:textColor="@color/color_yellow_FAEC55"
+                android:textSize="@dimen/sp16" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_pay_order_zhifubao"
+            android:layout_width="@dimen/dp25"
+            android:layout_height="@dimen/dp25"
+            android:background="@drawable/weixuanzhong" />
+
+    </LinearLayout>
+
+    <com.shangshow.showlive.common.widget.custom.BaseButton
+        android:id="@+id/bb_pay_order_pay"
+        style="@style/A1ColorBtn_Corner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp60"
+        android:text="@string/person_ok_pay" />
+
+</LinearLayout>

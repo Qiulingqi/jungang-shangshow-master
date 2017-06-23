@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/common_activity_padding_30"
+        android:orientation="vertical">
+
+        <com.shangshow.showlive.common.widget.custom.ClearableEditTextWithIcon
+            android:id="@+id/input_new_pwd_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_list_item_height_48"
+            android:layout_marginLeft="@dimen/common_activity_padding_30"
+            android:layout_marginRight="@dimen/common_activity_padding_30"
+            android:layout_marginTop="@dimen/common_activity_padding_10"
+            android:background="@drawable/selector_login_account"
+            android:gravity="center"
+            android:inputType="number">
+
+
+        </com.shangshow.showlive.common.widget.custom.ClearableEditTextWithIcon>
+
+
+        <com.shangshow.showlive.common.widget.custom.ClearableEditTextWithIcon
+            android:id="@+id/input_new_pwd_reconfirm_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_list_item_height_48"
+            android:layout_marginLeft="@dimen/common_activity_padding_30"
+            android:layout_marginRight="@dimen/common_activity_padding_30"
+            android:layout_marginTop="@dimen/common_activity_padding_10"
+            android:background="@drawable/selector_login_password"
+            android:gravity="center"
+            android:inputType="number">
+
+
+        </com.shangshow.showlive.common.widget.custom.ClearableEditTextWithIcon>
+
+
+        <com.shangshow.showlive.common.widget.custom.BaseButton
+            android:id="@+id/input_new_pwd_confirm"
+            style="@style/A1ColorBtn_Corner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/common_activity_padding_30"
+            android:text="@string/confirm" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

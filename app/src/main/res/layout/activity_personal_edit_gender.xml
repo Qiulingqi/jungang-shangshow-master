@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RadioGroup
+        android:id="@+id/gender_sex_group"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RadioButton
+            android:id="@+id/gender_male"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_list_item_height_48"
+            android:background="@drawable/shape_itemcolor_rightangle"
+            android:button="@null"
+            android:drawableRight="@android:drawable/btn_radio"
+            android:paddingLeft="@dimen/common_activity_padding_10"
+            android:text="男"
+            android:textColor="@color/gray" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_activity_padding_1"
+            android:background="@color/default_stroke_color" />
+
+        <RadioButton
+            android:id="@+id/gender_female"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_list_item_height_48"
+            android:background="@drawable/shape_itemcolor_rightangle"
+            android:button="@null"
+            android:drawableRight="@android:drawable/btn_radio"
+            android:paddingLeft="@dimen/common_activity_padding_10"
+            android:text="女"
+            android:textColor="@color/gray" />
+
+    </RadioGroup>
+
+    <com.shangshow.showlive.common.widget.custom.BaseButton
+        android:id="@+id/gender_button"
+        style="@style/A1ColorBtn_Corner"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_list_item_height_48"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/common_activity_padding_16"
+        android:text="保存" />
+</RelativeLayout>

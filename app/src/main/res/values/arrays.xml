@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="function_text">
+        <item>账户</item>
+        <item>收益</item>
+        <item>打赏</item>
+        <item>商品</item>
+        <item>公益</item>
+        <item>竞拍</item>
+        <item>合作</item>
+        <item>订单</item>
+    </string-array>
+
+    <string-array name="function_images">
+        <item>@mipmap/icon_personal_account</item>
+        <item>@mipmap/icon_personal_income</item>
+        <item>@mipmap/icon_personal_reward</item>
+        <item>@mipmap/icon_personal_goods</item>
+        <item>@mipmap/icon_personal_benefit</item>
+        <item>@mipmap/icon_personal_auction</item>
+        <item>@mipmap/icon_personal_teamwork</item>
+        <item>@mipmap/icon_personal_order</item>
+    </string-array>
+
+</resources>

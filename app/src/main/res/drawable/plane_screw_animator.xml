@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@mipmap/plane_screw_1_1" android:duration="20" />
+    <item android:drawable="@mipmap/plane_screw_1_2" android:duration="20" />
+    <item android:drawable="@mipmap/plane_screw_1_3" android:duration="20" />
+    <item android:drawable="@mipmap/plane_screw_1_4" android:duration="20" />
+    <item android:drawable="@mipmap/plane_screw_1_5" android:duration="20" />
+    <item android:drawable="@mipmap/plane_screw_1_6" android:duration="20" />
+    <item android:drawable="@mipmap/plane_screw_1_7" android:duration="20" />
+    <item android:drawable="@mipmap/plane_screw_1_8" android:duration="20" />
+    <item android:drawable="@mipmap/plane_screw_1_9" android:duration="20" />
+
+</animation-list>

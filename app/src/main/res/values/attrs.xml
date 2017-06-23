@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 滑动退出 -->
+    <declare-styleable name="SwipeBackLayout">
+        <attr name="edge_size" format="dimension" />
+        <attr name="edge_flag">
+            <enum name="left" value="0" />
+            <enum name="right" value="1" />
+            <enum name="bottom" value="2" />
+            <enum name="all" value="3" />
+        </attr>
+        <attr name="shadow_left" format="reference" />
+        <attr name="shadow_right" format="reference" />
+        <attr name="shadow_bottom" format="reference" />
+    </declare-styleable>
+
+    <attr name="SwipeBackLayoutStyle" format="reference" />
+    <!--LoadingOverLayView-->
+    <declare-styleable name="LoadingOverLayView">
+        <attr name="noDataText" format="string" />
+        <attr name="noDataBtn" format="string" />
+        <attr name="noDataImg" format="reference" />
+        <attr name="loadingLayoutMarginTop" format="dimension" />
+        <attr name="noDataLayoutMarginTop" format="dimension" />
+    </declare-styleable>
+
+    <!-- CircleImageView -->
+    <declare-styleable name="CircleImageView">
+        <attr name="image_border_width" format="dimension" />
+        <attr name="image_border_color" format="color" />
+    </declare-styleable>
+    <!-- DynamicHeightImageView -->
+    <declare-styleable name="DynamicHeightImageView">
+        <attr name="ratio_width_point_value" format="integer" />
+        <attr name="ratio_height_point_value" format="integer" />
+    </declare-styleable>
+
+    <!--SwitchButton-->
+    <declare-styleable name="SwitchButton">
+        <attr name="kswThumbDrawable" format="reference" />
+        <attr name="kswThumbColor" format="color|reference" />
+        <attr name="kswThumbMargin" format="dimension|reference" />
+        <attr name="kswThumbMarginTop" format="dimension|reference" />
+        <attr name="kswThumbMarginBottom" format="dimension|reference" />
+        <attr name="kswThumbMarginLeft" format="dimension|reference" />
+        <attr name="kswThumbMarginRight" format="dimension|reference" />
+        <attr name="kswThumbWidth" format="dimension|reference" />
+        <attr name="kswThumbHeight" format="dimension|reference" />
+        <attr name="kswThumbRadius" format="dimension|reference" />
+        <attr name="kswBackRadius" format="dimension|reference" />
+        <attr name="kswBackDrawable" format="reference" />
+        <attr name="kswBackColor" format="color|reference" />
+        <attr name="kswFadeBack" format="boolean" />
+        <attr name="kswBackMeasureRatio" format="float" />
+        <attr name="kswAnimationDuration" format="integer" />
+        <attr name="kswTintColor" format="color|reference" />
+        <attr name="kswTextOn" format="string" />
+        <attr name="kswTextOff" format="string" />
+        <attr name="kswTextMarginH" format="dimension" />
+    </declare-styleable>
+
+    <!--tagView-->
+    <declare-styleable name="TagView">
+        <attr name="lineMargin" format="dimension" />
+        <attr name="tagMargin" format="dimension" />
+        <attr name="textPaddingLeft" format="dimension" />
+        <attr name="textPaddingRight" format="dimension" />
+        <attr name="textPaddingTop" format="dimension" />
+        <attr name="textPaddingBottom" format="dimension" />
+    </declare-styleable>
+
+    <!--ultra下拉刷新-->
+    <declare-styleable name="PtrFrameLayout">
+        <!-- Optional. If you put header and content in xml, you can you these to specify them. -->
+        <attr name="ptr_header" format="reference" />
+        <attr name="ptr_content" format="reference" />
+
+        <!-- the resistance when you are moving the frame -->
+        <attr name="ptr_resistance" format="float" />
+
+        <!-- the ration of the height of the header to trigger refresh -->
+        <attr name="ptr_ratio_of_header_height_to_refresh" format="float" />
+
+        <attr name="ptr_duration_to_close" format="integer" />
+        <attr name="ptr_duration_to_close_header" format="integer" />
+
+        <!-- pull to refresh, otherwise release to refresh, default is release to refresh -->
+        <attr name="ptr_pull_to_fresh" format="boolean" />
+
+        <!-- keep header when refreshing-->
+        <attr name="ptr_keep_header_when_refresh" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="PtrClassicHeader">
+        <attr name="ptr_rotate_ani_time" format="integer" />
+    </declare-styleable>
+
+    <!-- 基于UIL管理的ImageView -->
+    <declare-styleable name="ImageViewEx">
+        <attr name="exiv_default_image_res" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="CircleImageView2">
+        <attr name="civ_border_width" format="dimension" />
+        <attr name="civ_border_color" format="color" />
+        <attr name="civ_border_overlay" format="boolean" />
+        <attr name="civ_fill_color" format="color" />
+    </declare-styleable>
+
+    <!-- 高斯模糊图片控件 -->
+    <declare-styleable name="BlurImageView">
+        <attr name="blur_radius" format="integer" />
+        <attr name="scale_ratio" format="integer" />
+        <attr name="memory_cache" format="boolean" />
+        <attr name="image_res" format="reference" />
+        <attr name="background_image_res" format="reference" />
+        <attr name="pre_show_local_origin_image" format="boolean" />
+        <attr name="enable_progress" format="boolean" />
+        <attr name="transition_animation" format="boolean" />
+    </declare-styleable>
+    <!--键盘切换控件-->
+    <declare-styleable name="KPSwitchPanelLayout">
+        <attr name="ignore_recommend_height" format="boolean" />
+    </declare-styleable>
+</resources>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/common_activity_padding_30"
+            android:layout_marginRight="@dimen/common_activity_padding_30"
+            android:layout_marginTop="@dimen/common_activity_padding_30"
+            android:background="@drawable/shape_translucence_corner"
+            android:orientation="vertical">
+
+            <com.shangshow.showlive.common.widget.custom.ClearableEditTextWithIcon
+                android:id="@+id/register_account_edittext"
+                style="@style/ClearEditTextStyle"
+                android:hint="手机号"
+                android:inputType="number"
+                android:maxLength="11" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_activity_padding_10"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/common_activity_padding_30"
+                android:layout_weight="1"
+                android:background="@drawable/shape_translucence_corner"
+                android:orientation="vertical">
+
+                <com.shangshow.showlive.common.widget.custom.ClearableEditTextWithIcon
+                    android:id="@+id/register_sms_code_edittext"
+                    style="@style/ClearEditTextStyle"
+                    android:hint="验证码"
+                    android:inputType="number"
+                    android:maxLength="4" />
+            </LinearLayout>
+
+
+            <com.shangshow.showlive.common.widget.custom.BaseButton
+                android:id="@+id/register_get_sms_code"
+                style="@style/SendSmsCoeStyle"
+                android:layout_marginLeft="@dimen/common_activity_padding_10"
+                android:layout_marginRight="@dimen/common_activity_padding_30" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/common_activity_padding_30"
+            android:layout_marginRight="@dimen/common_activity_padding_30"
+            android:layout_marginTop="@dimen/common_activity_padding_10"
+            android:background="@drawable/shape_translucence_corner"
+            android:orientation="vertical">
+
+            <com.shangshow.showlive.common.widget.custom.ClearableEditTextWithIcon
+                android:id="@+id/register_password_edittext"
+                style="@style/ClearEditTextStyle_singleLine"
+                android:inputType="textPassword"
+                android:hint="密码" />
+        </LinearLayout>
+
+
+        <com.shangshow.showlive.common.widget.custom.BaseButton
+            android:id="@+id/register_next_step"
+            style="@style/A1ColorBtn_Corner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/common_activity_padding_30"
+            android:layout_marginRight="@dimen/common_activity_padding_30"
+            android:layout_marginTop="@dimen/common_activity_padding_10"
+            android:text="@string/next_step" />
+
+        <TextView
+            android:id="@+id/register_service_protocol"
+            style="@style/TextViewSecondThemeText_14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/common_activity_padding_30"
+            android:layout_marginRight="@dimen/common_activity_padding_30"
+            android:layout_marginTop="@dimen/common_activity_padding_5"
+            android:gravity="center"
+            android:text="商秀服务协议" />
+    </LinearLayout>
+
+
+</LinearLayout>

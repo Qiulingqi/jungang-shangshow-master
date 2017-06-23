@@ -1,0 +1,135 @@
+apply plugin: 'com.android.application'
+
+def getGitVersion() {
+    try {
+        return 'git rev-parse --short HEAD'.execute().text.trim()
+    } catch (Throwable th) {
+        return "";
+    }
+}
+
+def buildToolsVer = "24.0.1"
+
+android {
+    useLibrary 'org.apache.http.legacy'
+
+    compileSdkVersion 24
+    buildToolsVersion buildToolsVer
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES.txt'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/dependencies.txt'
+        exclude 'META-INF/LGPL2.1'
+    }
+
+    defaultConfig {
+        applicationId "com.shangshow.showlive"
+        minSdkVersion 19
+        targetSdkVersion 21
+        buildConfigField "String", "GIT_REVISION", "\"${getGitVersion()}\""
+        buildConfigField "String", "BUILD_DATE", "\"${new Date().toLocaleString()}\"";
+        versionCode 1
+        versionName "20161115"
+        //以开启分包模式
+        multiDexEnabled true
+    }
+
+    signingConfigs {
+        debug {
+            storeFile file('shangshow.jks')
+            keyAlias "shangshow"
+            keyPassword "Shangshow-live_tv"
+            storePassword "Shangshow-live_tv"
+        }
+
+        release {
+            storeFile file('shangshow.jks')
+            keyAlias "shangshow"
+            keyPassword "Shangshow-live_tv"
+            storePassword "Shangshow-live_tv"
+        }
+    }
+
+    buildTypes {
+        debug {
+            signingConfig signingConfigs.debug
+        }
+
+        release {
+            minifyEnabled false
+            zipAlignEnabled true
+            shrinkResources false
+//            proguardFile('proguard.cfg')
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+
+        lintOptions {
+            checkReleaseBuilds false
+            abortOnError false
+        }
+//        dexOptions {
+//            incremental true
+//            preDexLibraries false
+//            jumboMode true
+//            javaMaxHeapSize "4g"
+//        }
+        packagingOptions {
+            exclude 'META-INF/LICENSE.txt'
+            exclude 'META-INF/LICENSE'
+            exclude 'META-INF/NOTICE.txt'
+        }
+    }
+    allprojects {
+        repositories {
+            jcenter()
+            maven { url "https://raw.githubusercontent.com/Pgyer/mvn_repo_pgyer/master" }
+        }
+    }
+    repositories {
+        flatDir {
+            dirs 'libs' //this way we can find the .aar file in libs folder
+        }
+    }
+
+    packagingOptions {
+        exclude 'assets/cosine/armeabi/cosined'
+    }
+}
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:24.2.0'
+    compile 'com.android.support:design:24.2.0'
+    compile 'com.android.support:multidex:1.0.0'
+    //        compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+    //Universal 图片缓存框架
+    //用户token加密
+    compile 'io.jsonwebtoken:jjwt:0.6.0'
+    //蒲公英
+    compile 'com.pgyersdk:sdk:2.4.1'
+    //第三方Banner控件convenientbanner
+    //    compile 'com.bigkoo:convenientbanner:2.0.5'
+    compile 'com.daimajia.swipelayout:library:1.2.0@aar'
+    //    compile 'com.daimajia.easing:library:1.0.0@aar'
+    compile 'com.daimajia.androidanimations:library:1.1.2@aar'
+    compile 'com.nineoldandroids:library:2.4.0'
+    // This dude gave a shoutout to you (daimajia) on his github page:
+    compile 'jp.wasabeef:recyclerview-animators:1.0.3@aar'
+    compile 'com.github.ctiao:DanmakuFlameMaster:0.4.9'
+    compile project(':quickbase')
+    compile project(':uikit')
+    compile 'com.google.android.gms:play-services-appindexing:8.1.0'
+    compile files('libs/picasso-2.5.2.jar')
+    compile files('libs/GifView.jar')
+    compile 'com.pingxx:pingpp-core:2.1.9'
+    compile 'com.pingxx:pingpp-alipay:2.1.9'
+    compile 'com.pingxx:pingpp-wxpay:2.1.9'
+}

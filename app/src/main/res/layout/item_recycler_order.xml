@@ -1,0 +1,157 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_order_item_parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/layout_item_color"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/common_activity_padding_16"
+    android:paddingLeft="@dimen/common_activity_padding_16"
+    android:paddingRight="@dimen/common_activity_padding_16"
+    android:paddingTop="@dimen/common_activity_padding_16">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/item_order_time"
+            style="@style/TextViewGrayText_14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="13:15\n\n06-27" />
+
+        <ImageView
+            android:id="@+id/item_order_image"
+            style="@style/TextStyle_SingleLine"
+            android:layout_width="@dimen/common_list_item_height_120"
+            android:layout_height="@dimen/common_list_item_height_90"
+            android:layout_marginLeft="@dimen/dp10"
+            android:scaleType="centerCrop"
+            android:src="@drawable/about_logo" />
+
+        <ImageView
+            android:id="@+id/iv_order_item_money"
+            android:layout_width="@dimen/dp36"
+            android:layout_height="@dimen/dp36"
+            android:layout_marginLeft="@dimen/dp15"
+            android:layout_marginRight="@dimen/dp05"
+            android:scaleType="centerCrop"
+            android:src="@drawable/dashang"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/ll_order_item_goods"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp10"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/item_order_tv"
+                style="@style/TextViewGrayText_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="江诗丹顿" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp16">
+
+                <TextView
+                    style="@style/TextViewGrayText_14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="售价:" />
+
+                <TextView
+                    android:id="@+id/item_order_price"
+                    style="@style/TextViewSecondThemeText_16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="¥ 443.1545" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/item_order_no"
+                style="@style/TextViewGrayText_14"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="bottom"
+                android:text="数量：2" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_order_item_money"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp10"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_item_order_add_money"
+                style="@style/TextViewGrayText_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:includeFontPadding="false"
+                android:text="充值：50￥" />
+
+            <TextView
+                android:id="@+id/tv_item_order_bi"
+                style="@style/TextViewGrayText_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp05"
+                android:gravity="bottom"
+                android:includeFontPadding="false"
+                android:text="商秀币：1000" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_order_item_status"
+            style="@style/TextViewGrayText_14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="已支付"
+            android:textColor="@color/ColorD" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_order_item_pay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp15"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        >
+
+        <com.shangshow.showlive.common.widget.custom.BaseButton
+            android:id="@+id/bb_order_pay_go"
+            style="@style/A1ColorBtn_Corner"
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:text="去支付" />
+
+        <com.shangshow.showlive.common.widget.custom.BaseButton
+            android:id="@+id/bb_order_pay_close"
+            style="@style/A1ColorBtn_Corner"
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="@dimen/dp30"
+            android:text="取消支付" />
+
+    </LinearLayout>
+
+</LinearLayout>
+

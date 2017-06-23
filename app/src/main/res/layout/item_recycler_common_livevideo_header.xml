@@ -1,0 +1,152 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/livevideo_info_layout"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:orientation="horizontal"
+    android:background="@drawable/bg_big_scene"
+    android:paddingTop="@dimen/dp06"
+    android:paddingLeft="@dimen/common_activity_padding_10"
+    android:paddingRight="@dimen/common_activity_padding_10">
+
+    <include
+        layout="@layout/layout_item_user_avatar" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/common_activity_padding_10"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/livevideo_info_username"
+            style="@style/TextStyle_SingleLine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="呵呵呵"
+            android:maxEms="5"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_14" />
+
+        <TextView
+            android:id="@+id/livevideo_info_labercode"
+            style="@style/TextStyle_SingleLine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="谁再看"
+            android:includeFontPadding="false"
+            android:layout_marginTop="@dimen/dp02"
+            android:textColor="@color/color_green_desc"
+            android:textSize="@dimen/text_size_12" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/livevideo_info_watch_number"
+                style="@style/TextStyle_SingleLine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="12dp"
+                android:textColor="@color/color_green_desc" />
+
+            <TextView
+                android:id="@+id/livevideo_info_watch_number_laber"
+                style="@style/TextStyle_SingleLine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp02"
+                android:textSize="12dp"
+                android:text="在看"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_function"
+        android:orientation="vertical"
+        android:gravity="right"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/live_video_info_desc"
+                style="@style/TextStyle_SingleLine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="开机速度快解放"
+                android:textColor="@color/color_yellow_FAEC55"
+                android:textSize="@dimen/text_size_12" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/dp05"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_weight="2"
+            android:layout_height="0dp">
+            <LinearLayout
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="@dimen/dp22"
+                    android:layout_height="@dimen/dp22"
+                    android:src="@mipmap/present"/>
+                <TextView
+                    style="@style/TextStyle_SingleLine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1.3W"
+                    android:textColor="@color/color_yellow_FAEC55"
+                    android:textSize="@dimen/text_size_10"/>
+            </LinearLayout>
+            <ImageView
+                android:layout_marginLeft="@dimen/dp05"
+                android:layout_width="@dimen/dp22"
+                android:layout_height="@dimen/dp22"
+                android:src="@mipmap/plus"/>
+
+            <ImageView
+                android:layout_marginLeft="@dimen/dp05"
+                android:layout_width="@dimen/dp25"
+                android:layout_height="@dimen/dp25"
+                android:src="@mipmap/share"
+                android:id="@+id/imageView2" />
+
+            <LinearLayout
+                android:layout_marginLeft="@dimen/dp05"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="@dimen/dp25"
+                    android:layout_height="@dimen/dp25"
+                    android:src="@mipmap/heart"/>
+
+                <TextView
+                    style="@style/TextStyle_SingleLine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1.3W"
+                    android:textColor="@color/color_yellow_FAEC55"
+                    android:textSize="@dimen/text_size_10" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

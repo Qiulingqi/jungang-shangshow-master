@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/swipe"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#000"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/user_icon_layout"
+        android:layout_width="@dimen/user_avatar_width"
+        android:layout_height="@dimen/user_avatar_height"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/common_activity_padding_16">
+
+
+        <com.netease.nim.uikit.common.ui.imageview.HeadImageView
+            android:id="@+id/user_icon"
+            android:layout_width="@dimen/user_avatar_width"
+            android:layout_height="@dimen/user_avatar_height"
+            android:layout_marginBottom="@dimen/common_activity_padding_5"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/icon_avatar_default" />
+
+        <ImageView
+            android:id="@+id/user_type_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/common_activity_padding_5"
+            android:src="@mipmap/icon_user_mark_favourite" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/common_activity_padding_5"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/user_labercode"
+            style="@style/TextViewGrayText_16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/btn_delete_n"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/common_activity_padding_5"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/TextViewGrayText_14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ID:" />
+
+        <TextView
+            android:id="@+id/user_id_no"
+            style="@style/TextViewGrayText_14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/common_activity_padding_5"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/btn_delete_n"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/user_type_value"
+            style="@style/TextViewSecondThemeText_16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/user_attention_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/common_activity_padding_16"
+        android:paddingLeft="@dimen/common_activity_padding_30"
+        android:paddingRight="@dimen/common_activity_padding_30"
+        android:paddingTop="@dimen/common_activity_padding_16">
+
+        <LinearLayout
+            android:id="@+id/user_videos_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+
+            <TextView
+                style="@style/TextViewWhiteText_16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:paddingLeft="@dimen/common_activity_padding_10"
+                android:paddingRight="@dimen/common_activity_padding_10"
+                android:text="@string/video_text" />
+
+            <TextView
+                android:id="@+id/user_videos"
+                style="@style/TextViewGrayText_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/common_activity_padding_5"
+                android:text="" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/user_friends_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+
+            <TextView
+                style="@style/TextViewWhiteText_16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:paddingLeft="@dimen/common_activity_padding_10"
+                android:paddingRight="@dimen/common_activity_padding_10"
+                android:text="@string/attention_text" />
+
+            <TextView
+                android:id="@+id/user_friends"
+                style="@style/TextViewGrayText_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/common_activity_padding_5"
+                android:text="" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/user_follwers_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+
+            <TextView
+                style="@style/TextViewWhiteText_16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:paddingLeft="@dimen/common_activity_padding_10"
+                android:paddingRight="@dimen/common_activity_padding_10"
+                android:text="@string/fans_text" />
+
+            <TextView
+                android:id="@+id/user_follwers"
+                style="@style/TextViewGrayText_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/common_activity_padding_5"
+                android:text="" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/user_apply_for_attestation"
+        style="@style/TextViewSecondThemeText_16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/shape_yellow_corner"
+        android:gravity="center"
+        android:paddingLeft="@dimen/common_activity_padding_10"
+        android:paddingRight="@dimen/common_activity_padding_10"
+        android:text="@string/apply_for_attestation" />
+
+</LinearLayout>
+    

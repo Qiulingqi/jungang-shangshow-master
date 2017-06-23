@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/live_back"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:id="@+id/firstRelayoutBegin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/launch_live_logo_layout"
+                android:layout_width="match_parent"
+                android:layout_height="260dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <!--<com.shangshow.showlive.widget.MyVideoView
+                    android:id="@+id/launch_live_video"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:visibility="gone" />-->
+
+                <ImageView
+                    android:id="@+id/launch_live_logo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/icon_placeholder" />
+
+                <TextView
+                    android:id="@+id/launch_live_upload_type"
+                    style="@style/TextViewWhiteText_20"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/common_list_item_height_48"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/translucence"
+                    android:gravity="center"
+                    android:text="@string/change_header_images" />
+
+            </RelativeLayout>
+            <!--<ProgressBar-->
+            <!--android:id="@+id/progress_bar"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="20dp"-->
+            <!--style="@style/MediaController_SeekBar"-->
+            <!--android:max="100"-->
+            <!--android:progress="0"-->
+            <!--android:layout_below="@id/launch_live_logo_layout"-->
+            <!--/>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/launch_live_logo_layout"
+                android:layout_marginTop="@dimen/common_activity_padding_30"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/common_activity_padding_16"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="亲！有标题 有人气："
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+
+                    <com.shangshow.showlive.common.widget.custom.ClearableEditTextWithIcon
+                        android:id="@+id/launch_live_title"
+                        style="@style/ClearEditTextStyle"
+                        android:textSize="@dimen/sp13"
+                        android:textColorHint="@android:color/white"
+                        android:textColor="@android:color/white"
+                        android:hint="据说没有标题的直播都是耍流氓" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="@color/white" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_all_async"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/dp30"
+                        android:layout_marginBottom="20dp"
+                        >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="任务进度"
+                            android:textColor="@color/white"
+                            android:textSize="18sp" />
+
+                        <ProgressBar
+                            android:id="@+id/upload_progressbar"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:layout_marginTop="@dimen/dp10"
+                            android:max="100"
+                            android:progressDrawable="@drawable/bg_common_browser_progress_horizontal" />
+                    </LinearLayout>
+
+                    <com.shangshow.showlive.common.widget.custom.BaseButton
+                        android:id="@+id/launch_welfare_live_btn"
+                        style="@style/A1ColorBtn_Right"
+                        android:layout_above="@+id/launch_live_btn"
+                        android:layout_marginBottom="@dimen/common_activity_padding_5"
+                        android:background="#ca6b6b"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/launch_welfare_live"
+                        android:visibility="gone" />
+                    <com.shangshow.showlive.common.widget.custom.BaseButton
+                        android:id="@+id/launch_live_btn"
+                        style="@style/A1ColorBtn_Right"
+                        android:layout_marginLeft="@dimen/common_activity_padding_16"
+                        android:layout_marginRight="@dimen/common_activity_padding_16"
+                        android:background="@drawable/shape_yellow_corner"
+                        android:textColor="#dfbe22"
+                        android:text="@string/launch_live"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="150dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

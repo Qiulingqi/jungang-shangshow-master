@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/common_title_layout_height"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <com.shaojun.widget.RadiusSegmentControl
+        android:id="@+id/home_title_radius_segment_control"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/t_color"
+        android:textSize="13sp"
+        app:colors="@color/white"
+        app:cornerRadius="@dimen/common_round_corner_radius"
+        app:direction="horizon"
+        app:horizonGap="15dip"
+        app:textSelectedColors="@color/t_color"
+        app:texts="热门|关注"
+        app:verticalGap="8dip" />
+
+</LinearLayout>
+
+
+

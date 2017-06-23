@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--<com.shangshow.showlive.common.widget.TitleBarView
+        android:id="@+id/personal_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />-->
+
+    <com.shangshow.showlive.common.widget.ultra.PtrFrameLayout
+        android:id="@+id/home_personal_ptr_framentlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/personal_logined_layout"
+                layout="@layout/fragment_tab_personal_logined" />
+
+            <!--<include
+                android:id="@+id/personal_unlogin_layout"
+                layout="@layout/fragment_tab_personal_unlogin" />-->
+
+        </FrameLayout>
+    </com.shangshow.showlive.common.widget.ultra.PtrFrameLayout>
+</RelativeLayout>

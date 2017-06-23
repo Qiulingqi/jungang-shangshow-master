@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.shangshow.showlive.common.widget.ultra.PtrHTFrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/live_goods_ptr_framelayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/rl_mygoods_show"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/mygoods_add_goods_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/common_list_item_height_100"
+                    android:background="@color/layout_item_color"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/icon_add1" />
+
+                    <TextView
+                        style="@style/TextViewGrayText_16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/common_activity_padding_10"
+                        android:text="创建商品" />
+
+                </LinearLayout>
+
+                <FrameLayout
+                    android:id="@+id/mygoods_top_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/mygoods_cooperate_merchant"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/common_list_item_height_80"
+                        android:background="@color/layout_item_color"
+                        android:paddingBottom="@dimen/common_activity_padding_10"
+                        android:paddingLeft="@dimen/dp10"
+                        android:paddingTop="@dimen/common_activity_padding_10" />
+
+                </FrameLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/rl_mygoods_show"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/text_goods_list"
+                    style="@style/TextViewGrayText_16"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/common_list_item_height_40"
+                    android:layout_below="@+id/mygoods_top_layout"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/common_activity_padding_16"
+                    android:text="商品列表" />
+
+                <com.shangshow.showlive.widget.ScrollSwipeListView
+                    android:id="@+id/live_goods_recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</com.shangshow.showlive.common.widget.ultra.PtrHTFrameLayout>

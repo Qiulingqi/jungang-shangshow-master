@@ -1,0 +1,88 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fl_livevideo_item_parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/layout_item_color">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/livevideo_header"
+            layout="@layout/item_recycler_common_livevideo_header" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp01"
+            android:background="@drawable/bother_shape_project_color"
+            android:layout_below="@+id/livevideo_header">
+
+            <com.shangshow.showlive.common.widget.custom.DynamicHeightImageView
+                android:id="@+id/livevideo_logo_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/common_list_item_height_100"
+                android:scaleType="fitXY"
+                app:ratio_height_point_value="1"
+                app:ratio_width_point_value="2" />
+
+            <ImageView
+                android:layout_width="@dimen/dp54"
+                android:layout_height="@dimen/dp54"
+                android:layout_centerInParent="true"
+                android:src="@drawable/play" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/livevideo_state"
+            style="@style/TextStyle_SingleLine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/livevideo_header"
+            android:layout_margin="@dimen/common_activity_padding_10"
+            android:background="@drawable/shape_transparent_a1_corner"
+            android:paddingBottom="2dp"
+            android:paddingLeft="@dimen/common_activity_padding_5"
+            android:paddingRight="@dimen/common_activity_padding_5"
+            android:paddingTop="2dp"
+            android:text="直播"
+            android:textColor="@color/a1_color" />
+
+        <com.shangshow.showlive.common.widget.RotateImageView
+            android:id="@+id/iv_live_status"
+            android:layout_width="@dimen/dp39"
+            android:layout_height="@dimen/dp18"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/livevideo_header"
+            android:layout_margin="@dimen/common_activity_padding_10"
+            android:src="@drawable/live"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/livevideo_laber"
+            style="@style/TextStyle_SingleLine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/livevideo_state"
+            android:layout_margin="@dimen/common_activity_padding_10"
+            android:padding="@dimen/common_activity_padding_5"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:id="@+id/iv_livevideo_item_select"
+            android:layout_width="@dimen/dp20"
+            android:layout_height="@dimen/dp20"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dp15"
+            android:layout_marginTop="@dimen/dp10"
+            android:background="@mipmap/circle_dis"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pager_refresh_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.shangshow.showlive.common.widget.ultra.PtrHTFrameLayout
+    android:id="@+id/private_letter_ptr_framentlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--<android.support.v7.widget.RecyclerView
+    android:id="@+id/private_letter_recycler"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />-->
+
+        <com.shangshow.showlive.widget.SwipeListView
+            android:id="@+id/private_letter_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.shangshow.showlive.common.widget.ultra.PtrHTFrameLayout>
+
+</LinearLayout>

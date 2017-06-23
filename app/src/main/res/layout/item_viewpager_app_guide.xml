@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg_color">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/common_activity_padding_16">
+
+            <TextView
+                android:id="@+id/guide_type"
+                style="@style/TextViewSecondThemeText_18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/guide_type_describe"
+                style="@style/TextViewGrayText_16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/common_activity_padding_16" />
+
+            <com.shangshow.showlive.common.widget.custom.BaseButton
+                android:id="@+id/btn_start"
+                style="@style/whiteBtn"
+                android:layout_width="@dimen/common_list_item_height_120"
+                android:layout_height="@dimen/common_list_item_height_50"
+                android:layout_marginTop="@dimen/common_activity_padding_16"
+                android:background="@drawable/shape_btn_skip_corner"
+                android:paddingLeft="@dimen/common_activity_padding_5"
+                android:paddingRight="@dimen/common_activity_padding_5"
+                android:text="开启旅程"
+                android:textColor="@color/black_04"
+                android:textSize="@dimen/text_size_20" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2">
+
+            <ImageView
+                android:id="@+id/guide_image_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitCenter" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,97 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/layout_item_black_color"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/item_left"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/layout_item_color"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/common_activity_padding_10"
+            android:paddingLeft="@dimen/common_activity_padding_10"
+            android:paddingRight="@dimen/dp20"
+            android:paddingTop="@dimen/common_activity_padding_10">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/item_address_username"
+                        style="@style/TextStyle_SingleLine"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/text_size_14" />
+
+                    <TextView
+                        android:id="@+id/item_address_phone"
+                        style="@style/TextStyle_SingleLine"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/dp30"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/text_size_14" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/item_address_detail"
+                    style="@style/TextStyle_SingleLine"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp05"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/text_size_16" />
+
+                <TextView
+                    android:id="@+id/item_address_isdefault"
+                    style="@style/TextStyle_SingleLine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp05"
+                    android:text="默认"
+                    android:textColor="@color/a1_color" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp25"
+                android:layout_marginTop="@dimen/dp25"
+                android:src="@mipmap/icon_arrows_right_white" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/item_right"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/disagree_text_view"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:background="@color/color_red_pay"
+            android:gravity="center"
+            android:text="删除"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+</LinearLayout>

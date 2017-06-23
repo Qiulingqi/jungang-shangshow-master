@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_tab_top_banner_pager" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_home_top_bunch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/home_hot_recommend_RecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ImageView1"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:padding="5dp"
+            android:src="@mipmap/youtube" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="2dp">
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Like/Share"
+                android:textColor="#fff"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="围观Youtube大牌网红Top ten如何分享新生活方式"
+                android:textColor="@color/color_grey_999999"
+                android:textSize="10dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="2dp"
+            android:text="同步更新"
+            android:textColor="@color/color_grey_999999"
+            android:textSize="8dp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/hot_video2"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#000">
+
+        <ImageView
+            android:id="@+id/Hot_video"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/youtube" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Hot_video"
+        android:background="@color/grey">
+
+        <TextView
+            android:id="@+id/More_subscription_channel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="5dp"
+            android:text="更多订阅频道"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/a1_color_deep"
+            android:textSize="10dp" />
+    </RelativeLayout>
+
+</LinearLayout>
+

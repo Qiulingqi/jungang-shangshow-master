@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.shangshow.showlive.common.widget.ultra.PtrFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_marginTop="@dimen/dp23"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp50"
+            android:background="@drawable/bg_titlebar_layout" >
+
+            <RelativeLayout
+                android:id="@+id/rl_left_back"
+                android:layout_width="@dimen/common_title_button_width"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/common_activity_padding_16"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/selector_title_icon_back" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_chat_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:ellipsize="end"
+                android:maxEms="10"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_17" />
+
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/rv_p2p_chat_data"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:divider="#00000000"
+            android:dividerHeight="0dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp60"
+            android:background="@color/gift_background_color"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/et_p2p_chat_content"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp35"
+                android:layout_marginLeft="@dimen/dp30"
+                android:layout_marginRight="@dimen/dp15"
+                android:layout_weight="1"
+                android:background="@drawable/shape_white_corner"
+                android:paddingLeft="@dimen/dp10"
+                android:paddingRight="@dimen/dp10"
+                android:textColor="@color/black_04" />
+
+            <com.shangshow.showlive.common.widget.custom.BaseButton
+                android:id="@+id/bb_p2p_chat_send"
+                style="@style/A1ColorBtn_Corner"
+                android:layout_width="@dimen/common_list_item_height_70"
+                android:layout_height="@dimen/common_list_item_height_30"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dp15"
+                android:enabled="false"
+                android:text="发送"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</com.shangshow.showlive.common.widget.ultra.PtrFrameLayout>

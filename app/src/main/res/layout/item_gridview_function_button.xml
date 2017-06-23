@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/selector_item_gridview"
+    android:gravity="center"
+    android:minHeight="@dimen/common_list_item_height_90"
+    android:orientation="vertical"
+    android:padding="@dimen/common_activity_padding_10">
+
+    <ImageView
+        android:id="@+id/grid_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:src="@mipmap/icon_personal_order"></ImageView>
+
+    <TextView
+        android:id="@+id/grid_text"
+        style="@style/TextViewGrayText_14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/common_activity_padding_5"
+        android:text="xx"></TextView>
+
+</LinearLayout>

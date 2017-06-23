@@ -1,0 +1,96 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/common_list_item_height_60"
+    android:background="@color/layout_item_black_color"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/common_activity_padding_10"
+    android:paddingRight="@dimen/common_activity_padding_10">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="2"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+            <RelativeLayout
+                android:id="@+id/user_icon_layout"
+                android:layout_width="@dimen/user_avatar_width"
+                android:layout_height="@dimen/user_avatar_height"
+                android:layout_gravity="left"
+                android:gravity="center_vertical">
+
+                <com.netease.nim.uikit.common.ui.imageview.HeadImageView
+                    android:id="@+id/user_icon_flower"
+                    android:layout_width="@dimen/user_avatar_width"
+                    android:layout_height="@dimen/user_avatar_height"
+                    android:layout_marginBottom="@dimen/common_activity_padding_5"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/icon_avatar_default" />
+
+                <ImageView
+                    android:id="@+id/user_type_icon_flower"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="@dimen/common_activity_padding_5"
+                    android:src="@mipmap/icon_user_mark_favourite" />
+
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/attention_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:maxEms="10"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="旅游达人"
+                android:textColor="@color/gray_10"
+                android:textSize="@dimen/text_size_17" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="right">
+
+            <com.shangshow.showlive.common.widget.custom.BaseButton
+                android:id="@+id/item_flower_attention"
+                style="@style/A1ColorBtn_Corner"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:text="关注"
+                android:textColor="@color/white" />
+
+            <!--<TextView-->
+                <!--android:id="@+id/rewardme_dcount_tv"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="12340"-->
+                <!--android:textColor="@color/color_yellow_FAEC55"-->
+                <!--android:textSize="@dimen/text_size_20" />-->
+
+            <!--<ImageView-->
+                <!--android:id="@+id/rewardme_dcount_iv"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:src="@mipmap/icon_personal_diamond" />-->
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+

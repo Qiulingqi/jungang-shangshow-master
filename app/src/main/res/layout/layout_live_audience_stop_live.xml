@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_stop_live_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_main_scene"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/dp60"
+    android:visibility="gone">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/user_icon_layout"
+            android:layout_width="@dimen/dp80"
+            android:layout_height="@dimen/dp80">
+
+            <com.shangshow.showlive.common.widget.custom.CircleImageView
+                android:id="@+id/stop_live_user_icon"
+                android:layout_width="@dimen/dp80"
+                android:layout_height="@dimen/dp80"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/icon_avatar_default" />
+
+            <ImageView
+                android:id="@+id/stop_live_user_type_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_margin="@dimen/dp05"
+                android:src="@mipmap/icon_user_mark_favourite" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_stop_live_name"
+            style="@style/TextViewGrayText_14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp10"
+            android:text="苏洛"
+            android:textColor="@color/gray_10"
+            android:textSize="@dimen/sp16" />
+    </LinearLayout>
+
+    <TextView
+        style="@style/TextViewGrayText_14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="直播结束"
+        android:textColor="@color/ColorD"
+        android:textSize="@dimen/sp18" />
+
+    <com.shangshow.showlive.common.widget.custom.BaseButton
+        android:id="@+id/bb_stop_live_close"
+        style="@style/A1ColorBtn_Right"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp45"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/dp50"
+        android:background="@color/gray_06"
+        android:text="关闭"
+        android:textColor="@color/ColorD"
+        android:textSize="@dimen/sp20" />
+
+</RelativeLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    <TextView
+        android:id="@+id/solding_goods_type_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="正在销售：0件"
+        android:layout_margin="@dimen/dp10"
+        android:textColor="@color/color_green_desc"
+        android:textSize="@dimen/text_size_12" />
+
+    <FrameLayout
+        android:id="@+id/mygoods_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/my_solding_goods_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/layout_item_color"
+            android:paddingBottom="@dimen/common_activity_padding_10" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/choose_cooperate_merchant_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/live_cooperate_merchant_recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp80" />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_marginTop="@dimen/dp10"
+        android:id="@+id/live_goods_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/layout_item_color" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <com.shangshow.showlive.common.widget.custom.BaseButton
+                    android:id="@+id/add_goods_btn"
+                    style="@style/A1ColorBtn_Corner"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/common_list_item_height_48"
+                    android:layout_margin="@dimen/common_activity_padding_16"
+                    android:text="增加商品" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <com.shangshow.showlive.common.widget.custom.BaseButton
+                    android:id="@+id/remove_goods_btn"
+                    style="@style/A1ColorBtn_Corner"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/common_list_item_height_48"
+                    android:layout_margin="@dimen/common_activity_padding_16"
+                    android:text="下架商品" />
+
+            </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

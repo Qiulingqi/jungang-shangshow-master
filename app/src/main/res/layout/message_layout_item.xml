@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/layout_item_black_color"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/item_left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/layout_item_color"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/common_activity_padding_5"
+        android:paddingLeft="@dimen/common_activity_padding_5"
+        android:paddingRight="@dimen/common_activity_padding_10"
+        android:paddingTop="@dimen/common_activity_padding_5">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include
+                layout="@layout/layout_item_user_avatar" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp10"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/item_message_name"
+                    style="@style/TextViewGrayText_14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp16"
+                    android:textColor="@color/gray_10"
+                    android:text="小明" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp10">
+
+                    <TextView
+                        android:id="@+id/item_message_message"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/sp14"
+                        android:singleLine="true"
+                        android:maxEms="10"
+                        android:ellipsize="end"
+                        android:textColor="@color/gray_10"
+                        android:text="我是小美" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/item_message_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textSize="@dimen/sp16"
+            android:layout_centerVertical="true"
+            android:textColor="@color/gray_10"
+            android:text="2016-10-8"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/item_right"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/tv_message_delete"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:background="@color/color_red_pay"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="删除"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+</LinearLayout>

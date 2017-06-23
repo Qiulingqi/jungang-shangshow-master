@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/setting_nick_name_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/common_activity_padding_10"
+        android:background="@drawable/shape_translucence_rightangle">
+
+        <com.shangshow.showlive.common.widget.custom.ClearableEditTextWithIcon
+            android:id="@+id/update_nick_name_edit"
+            style="@style/ClearEditTextStyle"
+            android:gravity="left|center_vertical" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,103 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/common_list_item_height_60"
+    android:background="@color/layout_item_black_color"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/common_activity_padding_10"
+    android:paddingRight="@dimen/common_activity_padding_10">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="2"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1" >
+
+            <RelativeLayout
+                android:id="@+id/user_icon_layout"
+                android:layout_width="@dimen/user_avatar_width"
+                android:layout_height="@dimen/user_avatar_height"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical">
+
+                <com.netease.nim.uikit.common.ui.imageview.HeadImageView
+                    android:id="@+id/user_icon"
+                    android:layout_width="@dimen/user_avatar_width"
+                    android:layout_height="@dimen/user_avatar_height"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/icon_avatar_default" />
+
+                <ImageView
+                    android:id="@+id/user_type_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="@dimen/common_activity_padding_5"
+                    android:src="@mipmap/icon_user_mark_favourite" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/private_letter_mark_name_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20dp"
+                    android:text="旅游达人"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_20" />
+
+                <TextView
+                    android:id="@+id/live_private_letter_context"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="5dp"
+                    android:singleLine="true"
+                    android:text="Hi,我是主播"
+                    android:textColor="@color/gray_10"
+                    android:textSize="@dimen/text_size_16" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="right">
+
+            <com.shangshow.showlive.common.widget.custom.BaseButton
+                android:id="@+id/item_private_letter_reply_btn"
+                style="@style/A1ColorBtn_Corner"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:text="回复"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+

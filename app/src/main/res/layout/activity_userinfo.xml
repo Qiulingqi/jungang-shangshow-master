@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.shangshow.showlive.common.widget.ultra.loadmore.RLPtrFrameLayout
+        android:id="@+id/userinfo_RLPtrFrameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:id="@+id/userinfo_operation_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_list_item_height_48"
+        android:layout_gravity="bottom"
+        android:background="@color/translucence">
+
+        <TextView
+            android:id="@+id/userinfo_attention"
+            style="@style/TextViewSecondThemeText_16"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/attention" />
+
+        <View
+            android:layout_width="@dimen/common_activity_padding_1"
+            android:layout_height="match_parent"
+            android:background="@color/default_stroke_color" />
+
+        <TextView
+            android:id="@+id/userinfo_apply_cooperate"
+            style="@style/TextViewSecondThemeText_16"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/apply_cooperate" />
+    </LinearLayout>
+</FrameLayout>

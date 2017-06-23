@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp70">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:paddingLeft="@dimen/dp15"
+        android:paddingRight="@dimen/dp15"
+        android:layout_height="@dimen/dp70">
+
+        <include
+            android:id="@+id/user_icon_layout"
+            layout="@layout/layout_item_user_avatar" />
+
+        <TextView
+            android:id="@+id/tv_videoremind_username"
+            style="@style/TextStyle_SingleLine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp10"
+            android:text="妍妍"
+            android:textColor="@color/gray_10" />
+
+        <LinearLayout
+            android:gravity="right|center_vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/time"/>
+
+            <TextView
+                android:id="@+id/tv_videoremind_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp05"
+                android:text="2016-10-08"
+                android:textColor="@color/gray_10" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_videoremind_startvideo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/dp10"
+            android:background="@drawable/shape_a1_corner"
+            android:padding="@dimen/dp05"
+            android:textSize="@dimen/sp10"
+            android:text="开播提醒"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+</RelativeLayout>

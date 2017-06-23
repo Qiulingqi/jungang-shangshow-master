@@ -1,0 +1,114 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/common_list_item_height_60"
+    android:background="@color/layout_item_black_color"
+    android:orientation="horizontal"
+
+    android:paddingLeft="@dimen/common_activity_padding_10"
+    android:paddingRight="@dimen/common_activity_padding_10">
+
+    <RelativeLayout
+        android:id="@+id/item_left"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="2dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical">
+
+                <RelativeLayout
+                    android:id="@+id/user_icon_layout"
+                    android:layout_width="@dimen/user_avatar_width"
+                    android:layout_height="@dimen/user_avatar_height"
+                    android:layout_gravity="left"
+                    android:gravity="center_vertical">
+
+                    <com.netease.nim.uikit.common.ui.imageview.HeadImageView
+                        android:id="@+id/user_icon_waiting_cooperate"
+                        android:layout_width="@dimen/user_avatar_width"
+                        android:layout_height="@dimen/user_avatar_height"
+                        android:layout_marginBottom="@dimen/common_activity_padding_5"
+                        android:scaleType="centerCrop"
+                        android:src="@mipmap/icon_avatar_default" />
+
+                    <ImageView
+                        android:id="@+id/user_type_icon_waiting_cooperate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_margin="@dimen/common_activity_padding_5"
+                        android:src="@mipmap/icon_user_mark_favourite" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/waiting_cooperate_mark_name_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20dp"
+                    android:text="小仙女邀请你合作"
+                    android:textColor="@color/gray_10"
+                    android:textSize="@dimen/text_size_15" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="right">
+
+                <TextView
+                    android:id="@+id/waiting_cooperate_time_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="06-27  13:15"
+                    android:textColor="@color/gray_10"
+                    android:textSize="@dimen/text_size_15" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/item_right"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/disagree_text_view"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:background="@color/color_red_pay"
+                android:gravity="center"
+                android:text="取消"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>
+

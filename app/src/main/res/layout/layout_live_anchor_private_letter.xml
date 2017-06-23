@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/private_letter_list_rl"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_main_scene"
+    android:orientation="vertical"
+    android:visibility="visible">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@drawable/bg_big_scene" >
+
+        <TextView
+            android:id="@+id/private_letter_name_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="私信"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_20" />
+    </LinearLayout>
+
+
+    <com.shangshow.showlive.common.widget.ultra.PtrHTFrameLayout
+        android:id="@+id/private_letter_ptr_framentlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <!--<android.support.v7.widget.RecyclerView
+            android:id="@+id/private_letter_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />-->
+
+        <com.shangshow.showlive.widget.SwipeListView
+            android:id="@+id/private_letter_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.shangshow.showlive.common.widget.ultra.PtrHTFrameLayout>
+
+</LinearLayout>

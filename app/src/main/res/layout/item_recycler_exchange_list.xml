@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/layout_item_color"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/item_goods_image"
+        style="@style/TextStyle_SingleLine"
+        android:layout_width="@dimen/common_list_item_height_120"
+        android:layout_height="@dimen/common_list_item_height_90"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:scaleType="fitXY" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/common_activity_padding_13"
+        android:layout_toRightOf="@id/item_goods_image"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/item_goods_name_tv"
+            style="@style/TextViewGrayText_14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="暂无" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/common_activity_padding_5"
+            android:layout_marginTop="@dimen/common_activity_padding_8">
+
+            <TextView
+                style="@style/TextViewGrayText_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="售价:" />
+
+            <TextView
+                android:id="@+id/item_goods_price"
+                style="@style/TextViewSecondThemeText_16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="¥ 0" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/item_goods_no"
+            style="@style/TextViewGrayText_14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="销量：0" />
+
+    </LinearLayout>
+
+</RelativeLayout>
+

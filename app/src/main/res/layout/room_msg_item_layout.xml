@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/dp10"
+    android:paddingTop="@dimen/dp05"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/sp17"
+        android:textColor="@color/ColorD"
+        android:text="荣威RX5"
+        android:id="@+id/tv_username" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/sp17"
+        android:text="开机速度快解放"
+        android:textColor="@android:color/white"
+        android:layout_marginLeft="@dimen/dp10"
+        android:id="@+id/tv_message" />
+</LinearLayout>

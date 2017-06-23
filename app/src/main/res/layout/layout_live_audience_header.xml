@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0000"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/live_show_diamand_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="40dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="35dp"
+                android:background="@drawable/nim_alpha_gray_right_corner_background"
+                android:paddingBottom="5dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="5dp">
+
+                <TextView
+                    android:id="@+id/diamand_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="5dp"
+                    android:text="商秀币"
+                    android:textColor="@color/color_yellow_FAEC55"
+                    android:textSize="13sp" />
+
+                <ImageView
+                    android:id="@+id/diamand_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/diamand_text"
+                    android:paddingLeft="5dp"
+                    android:src="@mipmap/icon_personal_diamond" />
+
+                <TextView
+                    android:id="@+id/live_diamand_amount_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toRightOf="@+id/diamand_image"
+                    android:text="2555010"
+                    android:textColor="@color/white"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+
+            <!--<RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_weight="2"
+                android:paddingBottom="5dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="5dp" />-->
+            <!--<RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_weight="2"
+                android:background="@drawable/nim_alpha_gray_left_corner_background"
+                android:paddingBottom="5dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="5dp">
+
+
+                <ImageView
+                    android:id="@+id/nev_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/sponsor_back" />
+
+                <TextView
+                    android:id="@+id/special_sponsor_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:text="特别赞助位"
+                    android:textColor="@color/color_yellow_FAEC55"
+                    android:textSize="13sp" />
+            </RelativeLayout>-->
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/room_owner_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/common_activity_padding_5"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:id="@+id/user_icon_layout"
+            android:layout_width="@dimen/user_avatar_width"
+            android:layout_height="@dimen/user_avatar_height"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/common_activity_padding_16">
+
+            <com.netease.nim.uikit.common.ui.imageview.HeadImageView
+                android:id="@+id/user_icon"
+                android:layout_width="@dimen/user_avatar_width"
+                android:layout_height="@dimen/user_avatar_height"
+                android:layout_marginBottom="@dimen/common_activity_padding_5"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/icon_avatar_default" />
+
+            <ImageView
+                android:id="@+id/user_type_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_margin="@dimen/common_activity_padding_5"
+                android:src="@mipmap/icon_user_mark_favourite" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/user_info_rl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/user_icon_layout">
+
+            <TextView
+                android:id="@+id/master_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="娱乐港台"
+                android:textColor="@color/white"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/online_count_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/master_name"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:text="150,000人"
+                android:textColor="@color/white"
+                android:textSize="11sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/attention_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/user_info_rl"
+            android:background="@drawable/shape_yellow_corner_pading0"
+            android:text="关注"
+            android:textColor="@color/color_yellow_FAEC55"
+            android:textSize="12sp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/in_room_audience_recycler"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:scrollbars="none">
+
+        </android.support.v7.widget.RecyclerView>
+    </RelativeLayout>
+    <!--<RelativeLayout
+    android:id="@+id/live_good_rl"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/live_show_diamand_ll">
+
+    <ImageButton
+    android:id="@+id/live_good_btn"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentRight="true"
+    android:src="@drawable/live_good" />
+    </RelativeLayout>-->
+</RelativeLayout>

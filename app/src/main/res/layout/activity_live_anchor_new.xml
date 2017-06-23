@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/live_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.shangshow.showlive.controller.liveshow.live.LiveSurfaceView
+            android:id="@+id/live_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/overlay"
+        style="@style/TextViewBlackText_16"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/common_bg_color"
+        android:gravity="center"
+        android:text="@string/loading"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/control_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/common_activity_padding_10"
+        android:paddingRight="@dimen/common_activity_padding_5">
+
+        <ImageButton
+            android:id="@+id/gift_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/common_activity_padding_5"
+            android:background="@drawable/nim_gift_icon_selector" />
+
+        <ImageButton
+            android:id="@+id/switch_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/common_activity_padding_10"
+            android:layout_toLeftOf="@+id/gift_btn"
+            android:background="@drawable/nim_switch_camera_selector" />
+    </RelativeLayout>
+
+</RelativeLayout>

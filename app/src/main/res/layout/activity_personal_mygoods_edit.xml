@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/edit_goods_release_btn">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:id="@+id/edit_goods_image_layout"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@color/translucence">
+
+                <ImageView
+                    android:id="@+id/edit_goods_add_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@mipmap/icon_add1" />
+
+                <ImageView
+                    android:id="@+id/edit_goods_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/edit_goods_title_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/common_activity_padding_5"
+                android:background="@drawable/shape_translucence_rightangle"
+                android:orientation="vertical">
+
+                <com.shangshow.showlive.common.widget.custom.ClearableEditTextWithIcon
+                    android:id="@+id/edit_goods_title"
+                    style="@style/ClearEditTextStyle"
+                    android:hint="商品标题"
+                    android:lines="1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/edit_goods_price_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/common_activity_padding_5"
+                android:background="@drawable/shape_translucence_rightangle"
+                android:orientation="vertical">
+
+                <com.shangshow.showlive.common.widget.custom.ClearableEditTextWithIcon
+                    android:id="@+id/edit_goods_price"
+                    style="@style/ClearEditTextStyle"
+                    android:hint="填写价格"
+                    android:lines="1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/common_activity_padding_5"
+                android:background="@drawable/shape_translucence_rightangle"
+                android:orientation="vertical">
+
+                <com.shangshow.showlive.common.widget.custom.ClearableEditTextWithIcon
+                    android:id="@+id/edit_goods_brief"
+                    style="@style/ClearEditTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:hint="商品描述" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <com.shangshow.showlive.common.widget.custom.BaseButton
+        android:id="@+id/edit_goods_release_btn"
+        style="@style/A1ColorBtn_Right"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="@string/release" />
+</RelativeLayout>

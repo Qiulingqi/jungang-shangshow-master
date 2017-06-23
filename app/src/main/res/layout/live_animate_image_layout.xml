@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/ll_plane"
+        android:orientation="horizontal"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="202dp"
+            android:layout_height="112dp"
+            android:layout_marginTop="7dp"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/plane_tail" />
+
+        <RelativeLayout
+            android:id="@+id/rl_plane_head"
+            android:layout_marginRight="150dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_plane_head"
+                android:layout_width="101dp"
+                android:layout_height="37dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="57dp"
+                android:src="@mipmap/plane_head" />
+
+            <ImageView
+                android:id="@+id/iv_plane_screw"
+                android:layout_width="75dp"
+                android:layout_height="101dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="25dp"
+                android:src="@drawable/plane_screw_animator" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ll_live_car"
+        android:orientation="horizontal"
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_car_lambo"
+            android:layout_width="188dp"
+            android:layout_height="104dp"
+            android:src="@mipmap/porche" />
+
+        <ImageView
+            android:id="@+id/iv_car_behind"
+            android:layout_width="16dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/car_lambo_animator" />
+
+        <ImageView
+            android:id="@+id/iv_car_before"
+            android:layout_width="32dp"
+            android:layout_height="42dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/car_lambo_animator" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_love_chocolate_animate"
+        android:layout_width="188dp"
+        android:layout_height="334dp"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:src="@drawable/love_chocolate_animator" />
+
+    <ImageView
+        android:id="@+id/iv_black_chocolate"
+        android:layout_width="188dp"
+        android:layout_height="334dp"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:src="@mipmap/black_chocolate" />
+
+    <ImageView
+        android:id="@+id/iv_bouquet_animate"
+        android:layout_width="130dp"
+        android:layout_height="125dp"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:src="@drawable/bouquet_animator" />
+
+    <ImageView
+        android:id="@+id/iv_white_chocolate"
+        android:layout_width="188dp"
+        android:layout_height="334dp"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:src="@mipmap/white_chocolate" />
+
+    <ImageView
+        android:id="@+id/iv_cake"
+        android:layout_width="180dp"
+        android:layout_height="218dp"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:src="@mipmap/cake_animate" />
+
+</RelativeLayout>

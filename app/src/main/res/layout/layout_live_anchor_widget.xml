@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/live_anchor_widget_rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#553299cc">
+
+    <LinearLayout
+        android:id="@+id/live_anchor_widget_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="8"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/live_anchor_header_ll"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:background="#0000">
+
+            <include layout="@layout/layout_live_header" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/live_anchor_gift_animation_ll"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <include
+                    android:id="@+id/gift_animation_view_up"
+                    layout="@layout/layout_gift_animation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/common_activity_padding_5" />
+
+                <include
+                    android:id="@+id/gift_animation_view_down"
+                    layout="@layout/layout_gift_animation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/gift_animation_view_up"
+                    android:layout_marginBottom="@dimen/common_activity_padding_5" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/live_anchor_message_and_like_ll"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2">
+            <!-- 收到观众发来的消息和点赞爱心布局-->
+            <include layout="@layout/layout_live_message_and_like" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/live_anchor_control_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include layout="@layout/layout_live_anchor_control" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <include
+        layout="@layout/layout_live_anchor_private_letter"
+        android:layout_width="match_parent"
+        android:layout_height="360dp"
+        android:layout_alignParentBottom="true" />
+
+    <RelativeLayout
+        android:id="@+id/layout_live_anchor_private_letter_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <include layout="@layout/nim_message_activity_bottom_layout" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="360dp"
+        android:layout_above="@id/layout_live_anchor_private_letter_input">
+
+        <include layout="@layout/layout_live_reply_private_letter" />
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/start_layout"
+        layout="@layout/nim_live_start_layout" />
+
+    <include layout="@layout/live_animate_image_layout" />
+    <!--直播结束画面-->
+    <include
+        layout="@layout/layout_live_anchor_finish"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:id="@+id/live_danmu_rl"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_centerInParent="true"
+        android:visibility="visible">
+
+        <include layout="@layout/layout_live_danmu" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,19 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <com.shangshow.showlive.common.widget.custom.DynamicHeightImageView
+        android:id="@+id/item_cooperate_merchant_image"
+        android:layout_width="@dimen/common_list_item_height_120"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dp10"
+        android:layout_marginLeft="@dimen/dp10"
+        android:scaleType="centerCrop"
+        app:ratio_height_point_value="1"
+        app:ratio_width_point_value="3" />
+
+</LinearLayout>
+

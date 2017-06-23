@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/dialog_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_activity_padding_1"
+        android:background="@color/dialog_stroke_color" />
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/common_list_item_height_50"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/dialog_btn_positiveButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/dialog_text_color" />
+
+        <View
+            android:id="@+id/dialog_btn_divide_view"
+            android:layout_width="@dimen/common_activity_padding_1"
+            android:layout_height="match_parent"
+            android:background="@color/dialog_stroke_color" />
+
+        <Button
+            android:id="@+id/dialog_btn_negativeButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/dialog_text_color" />
+    </LinearLayout>
+</LinearLayout>
+
+

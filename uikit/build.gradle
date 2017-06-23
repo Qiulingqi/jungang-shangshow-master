@@ -1,0 +1,47 @@
+apply plugin: 'com.android.library'
+
+android {
+    useLibrary 'org.apache.http.legacy'
+
+    compileSdkVersion 23
+    buildToolsVersion "24.0.1"
+
+    sourceSets {
+        main {
+            manifest.srcFile 'AndroidManifest.xml'
+            java.srcDirs = ['src']
+            resources.srcDirs = ['src']
+            aidl.srcDirs = ['src']
+            renderscript.srcDirs = ['src']
+            res.srcDirs = ['res', 'res-ptr']
+            assets.srcDirs = ['assets']
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+    allprojects {
+        repositories {
+            jcenter() // 或者 mavenCentral()
+            mavenCentral()
+        }
+    }
+    packagingOptions {
+        exclude 'assets/cosine/armeabi/cosined'
+    }
+}
+
+dependencies {
+    compile 'com.android.support:appcompat-v7:24.2.0'
+    compile 'com.android.support:design:24.2.0'
+    compile fileTree(dir: 'libs', include: '*.jar')
+    // 添加依赖。注意，版本号必须一致。
+    // 基础功能 (必需)
+//    compile 'com.netease.nimlib:basesdk:latest.integration'
+//     音视频需要
+//    compile 'com.netease.nimlib:avchat:latest.integration'
+//     聊天室需要
+//    compile 'com.netease.nimlib:chatroom:latest.integration'
+//     实时会话服务需要
+//    compile 'com.netease.nimlib:rts:latest.integration'
+//     全文检索服务需要
+//    compile 'com.netease.nimlib:lucene:latest.integration'
+}

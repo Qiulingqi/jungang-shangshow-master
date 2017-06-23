@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/common_list_item_height_60"
+    android:background="@color/layout_item_color"
+    android:paddingLeft="@dimen/common_activity_padding_10"
+    android:paddingRight="@dimen/common_activity_padding_10">
+
+    <include
+        android:id="@+id/attention_user_icon_layout"
+        layout="@layout/layout_item_user_avatar" />
+
+
+    <TextView
+        android:id="@+id/attention_user_name"
+        style="@style/TextViewGrayText_16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/common_activity_padding_10"
+        android:layout_toRightOf="@+id/attention_user_icon_layout"
+        android:text="姓名" />
+
+
+    <ImageView
+        android:id="@+id/attention_each_other"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/common_activity_padding_5"
+        android:layout_toLeftOf="@+id/attention_btn"
+        android:src="@mipmap/icon_attention_each_other"
+        android:visibility="gone" />
+
+
+    <TextView
+        android:id="@+id/attention_btn"
+        style="@style/TextViewWhiteText_16"
+        android:layout_width="@dimen/dp100"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/common_activity_padding_10"
+        android:background="@drawable/shape_a1_corner"
+        android:gravity="center"
+        android:paddingBottom="@dimen/common_activity_padding_5"
+        android:paddingTop="@dimen/common_activity_padding_5"
+        android:text="取消关注" />
+
+</RelativeLayout>

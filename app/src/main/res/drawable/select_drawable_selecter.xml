@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@mipmap/circle_dis" android:state_checked="false" />
+    <item android:drawable="@mipmap/circle_sle" android:state_checked="true" />
+
+</selector>

@@ -1,0 +1,188 @@
+<resources>
+    <string name="app_name">商秀</string>
+    <string name="shangjia">商家</string>
+    <string name="wanghong">网红</string>
+    <string name="xingka">星咔</string>
+    <!--引导页-->
+    <string name="app_name_detail">全球商业人文秀场</string>
+    <string name="guide_type01">星尚达人</string>
+    <string name="guide_type01_describe">我颜值高到爆!</string>
+    <string name="guide_type02">商家</string>
+    <string name="guide_type02_describe">我要特立独行!</string>
+    <string name="guide_type03">星咖达人</string>
+    <string name="guide_type03_describe">我就是行业达人!</string>
+
+    <string name="refresh">刷新</string>
+    <string name="network_error">请求数据异常，\n请检查网络或刷新看看</string>
+    <!--个人中心-->
+    <string name="person_center">个人中心</string>
+    <string name="apply_for_attestation">申请认证</string>
+    <string name="video_text">视频:</string>
+    <string name="attention_text">关注:</string>
+    <string name="fans_text">粉丝:</string>
+    <string name="video">视频</string>
+    <string name="attention">关注</string>
+    <string name="has_attention">已关注</string>
+    <string name="title_attention">我的关注</string>
+    <string name="fans">粉丝</string>
+    <string name="place_of_receipt">收货地址</string>
+    <string name="sex">性别</string>
+    <string name="binding_mobile">绑定手机</string>
+    <string name="receive_message">接收消息</string>
+    <string name="about_us">关于我们</string>
+    <string name="login_out">退出登录</string>
+
+    <string name="the_social_contract">社会公约</string>
+    <string name="privacy_policy">隐私政策</string>
+    <string name="terms_of_service">服务条款</string>
+    <string name="contact_us">联系我们</string>
+    <string name="feedback">意见反馈</string>
+    <string name="next_step">下一步</string>
+    <string name="complete">完成</string>
+
+    <string name="setting">设置</string>
+    <string name="register_info">填写信息</string>
+    <string name="forget_pwd">忘记密码</string>
+    <string name="input_new_pwd">输入新密码</string>
+    <string name="shangxiu_service_protocol">商秀服务协议</string>
+    <string name="message">消息</string>
+    <string name="search">搜索</string>
+    <string name="prompt">提示</string>
+
+    <!-- pullable-->
+    <string name="pull_to_refresh">下拉刷新</string>
+    <string name="release_to_refresh">松手刷新</string>
+    <string name="refreshing">正在刷新...</string>
+    <string name="refresh_succeed">刷新成功</string>
+    <string name="refresh_fail">刷新失败</string>
+    <string name="pullup_to_load">上拉加载</string>
+    <string name="release_to_load">松开加载</string>
+    <string name="release_to_load_more">松开加载更多</string>
+    <string name="loading">正在加载...</string>
+    <string name="load_succeed">加载成功</string>
+    <string name="load_fail">加载失败</string>
+    <string name="read_more">查看更多</string>
+    <string name="load_no_data">暂无数据</string>
+
+    <string name="cube_ptr_last_update">上次更新:&#160;</string>
+    <string name="cube_ptr_seconds_ago">&#160;秒前</string>
+    <string name="cube_ptr_minutes_ago">&#160;分钟前</string>
+    <string name="cube_ptr_hours_ago">&#160;小时前</string>
+
+
+    <string name="sms_code_send">验证码已发送，请注意查收</string>
+    <string name="mobile_is_wrong">请输入正确的手机号</string>
+    <string name="mobile_is_not_null">手机号不能为空</string>
+    <string name="password_is_not_null">密码不能为空</string>
+    <string name="twice_password_is_not_equals">两次输入的密码不一致，请修改后再试</string>
+    <string name="password_is_wrong">请输入6-15为数字和字母</string>
+    <string name="smscode_is_not_null">验证码不能为空</string>
+    <string name="smscode_length_is_wrong">验证码必须是4位</string>
+    <string name="nickname_is_not_null">昵称不能为空</string>
+    <string name="nickname_is_wrong">昵称只能12位由中文、字母或数字组成</string>
+    <string name="title_apply_for_authentication">申请认证</string>
+    <string name="title_apply_for_merchant">商家认证</string>
+    <string name="title_apply_for_superstar">星咖认证</string>
+    <string name="title_apply_for_favourite">网红认证</string>
+    <string name="title_address">收货地址</string>
+    <string name="title_address_detail">收货信息</string>
+    <string name="title_feedback">意见反馈</string>
+    <string name="title_my_goods">我的商品</string>
+    <string name="title_edit_goods_detail">详情</string>
+    <string name="title_add_goods">创建商品</string>
+
+    <string name="title_live_goods">添加商品</string>
+    <string name="live_buy_goods">购买</string>
+    <string name="skip">跳过</string>
+
+
+    <string name="my_classes">我的直播课程</string>
+    <string name="identity_tips">请选择你的身份，开始体验</string>
+    <string name="master_client">主播端</string>
+    <string name="audience_client">观众端</string>
+    <string name="live_start">开始直播</string>
+    <string name="finish_confirm">确定结束直播？</string>
+    <string name="exit_live_confirm">退出当前直播间播？</string>
+    <string name="confirm">确定</string>
+    <string name="room_id_tip">请输入直播间ID号</string>
+    <string name="send_gift">送了</string>
+    <string name="no_gift">当前还没收到礼物</string>
+    <string name="live_finish">直播已结束</string>
+    <string name="return_back">返回</string>
+    <string name="connecting">连接中，请等待...</string>
+    <string name="call_tel_phone">是否拨打客服热线？</string>
+
+
+    <string name="action_settings">Settings</string>
+    <string name="ok">确定</string>
+    <string name="cancel">取消</string>
+    <string name="clear_empty">清空</string>
+    <string name="iknow">知道了</string>
+    <string name="send">发送</string>
+    <string name="unknow_size">未知大小</string>
+    <string name="join">进入</string>
+    <string name="server_broken">与服务器连接断开</string>
+    <string name="leave">离开</string>
+    <string name="chatroom_status_exception">聊天室连接状态异常</string>
+
+    <string name="timer_default">00:00</string>
+    <string name="recording_cancel">手指上滑，取消发送</string>
+    <string name="recording_error">录音失败，请重试</string>
+    <string name="recording_init_failed">初始化录音失败</string>
+    <string name="record_audio">按住 说话</string>
+    <string name="record_audio_end">松开  结束</string>
+    <string name="recording_cancel_tip">松开手指，取消发送</string>
+    <string name="recording_max_time">录音达到最大时间，是否发送？</string>
+
+    <string name="repeat_download_message">重新下载?</string>
+    <string name="repeat_send_has_blank">重 发</string>
+    <string name="repeat_send_message">重发消息?</string>
+    <string name="copy_has_blank">复 制</string>
+    <string name="delete_has_blank">删 除</string>
+
+    <string name="unsupport_title">无法显示该内容</string>
+    <string name="unsupport_desc">客户端版本不支持该内容</string>
+
+    <string name="launch_live">开启直播</string>
+    <string name="change_header_image">更改直播头像</string>
+    <string name="change_header_images">更改图片</string>
+    <string name="upload_video">上传视频</string>
+    <string name="upload_image">上传图片</string>
+    <string name="submitted_for_review">提交审核</string>
+    <string name="launch_welfare_live">发起公益直播</string>
+    <string name="dialog_upload_complete_context">恭喜您上传成功\n我们将在12小时内完成审核</string>
+    <string name="cancel_attention">取消关注</string>
+    <string name="myorderlist">我的订单</string>
+    <string name="mycooperate">我的合作</string>
+    <string name="feedback_hint">请提出宝贵意见</string>
+    <string name="choice">选择</string>
+
+
+    <string name="video_state_live">直播</string>
+    <string name="video_state_video">回播</string>
+    <string name="release">发布</string>
+    <string name="price_format">￥%1$s</string>
+    <string name="submit_information">提交资料</string>
+
+
+    <string name="shangxiutv_163_com">如有其他资料可以发送至邮箱:shangxiutv@163.com</string>
+    <string name="dialog_feekback_message">感谢您的反馈\n您的支持是 我们的动力!</string>
+    <string name="apply_for_authentication_success">您的资料已经提交\n我们会在12小时内处理</string>
+    <string name="apply_for_supterstar_remind">尊敬的贵宾，您的申请信息我们将在12小时内查看并会让我们高级品牌经理与您取得联系。您有疑问也可以致电：021-62528079</string>
+    <string name="please_upload_business_license">请上传营业执照</string>
+    <string name="upload_photo">上传照片</string>
+    <string name="apply_cooperate">申请合作</string>
+
+    <string name="personal_account">余额</string>
+    <string name="personal_account_recharge">充值</string>
+    <string name="personal_account_recharge_notice">充值遇到问题，请拨打<u>021-62528079</u></string>
+
+    <string name="launch_btn">发起</string>
+    <string name="errcode_success">发送成功</string>
+    <string name="errcode_cancel">发送取消</string>
+    <string name="errcode_deny">发送被拒绝</string>
+    <string name="errcode_unknown">发送返回</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

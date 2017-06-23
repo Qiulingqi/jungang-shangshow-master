@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/yijianfanhuifubuju"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_list_item_height_125"
+            android:layout_marginTop="@dimen/common_activity_padding_5"
+            android:background="@drawable/shape_translucence_rightangle"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/common_activity_padding_10">
+
+            <com.shangshow.showlive.common.widget.custom.ClearableEditTextWithIcon
+                android:id="@+id/feedback_Remark"
+                style="@style/ClearEditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="top|left"
+                android:hint="@string/feedback_hint" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <com.shangshow.showlive.common.widget.custom.BaseButton
+        android:id="@+id/feedback_button"
+        style="@style/A1ColorBtn_Corner"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_list_item_height_48"
+        android:layout_centerInParent="true"
+        android:layout_margin="@dimen/common_activity_padding_16"
+        android:text="提交" />
+
+
+</RelativeLayout>

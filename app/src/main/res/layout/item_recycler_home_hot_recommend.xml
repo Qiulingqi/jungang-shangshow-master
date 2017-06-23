@@ -1,0 +1,23 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/user_icon_layout"
+        layout="@layout/layout_item_user_avatar" />
+
+    <TextView
+        android:id="@+id/recommend_user_laber"
+        style="@style/TextStyle_SingleLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/common_activity_padding_5"
+        android:background="@color/transparent"
+        android:text="姓名"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/text_size_12" />
+
+</LinearLayout>

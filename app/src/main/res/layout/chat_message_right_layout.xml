@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/dp15"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_chat_time"
+        style="@style/TextViewGrayText_14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="@dimen/dp05"
+        android:paddingBottom="@dimen/dp05"
+        android:text="sdsd"
+        android:textColor="@color/ColorD"
+        android:textSize="@dimen/dp12" />
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/dp05"
+        android:layout_marginRight="@dimen/dp15"
+        android:gravity="right"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:layout_marginRight="@dimen/dp05"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_chat_name"
+                style="@style/TextViewGrayText_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="sdsd"
+                android:visibility="gone"
+                android:textColor="@color/gray_10"
+                android:textSize="@dimen/sp16" />
+            <TextView
+                android:id="@+id/tv_chat_message"
+                android:padding="@dimen/dp05"
+                android:layout_width="wrap_content"
+                android:maxWidth="@dimen/dp200"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:background="@drawable/chat_right"
+                android:layout_marginTop="@dimen/dp10"
+                android:lineSpacingExtra="@dimen/dp03"
+                android:text="水电费水电费"
+                android:textSize="@dimen/sp16" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="46dp"
+            android:layout_height="46dp">
+        <include layout="@layout/layout_item_user_avatar" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

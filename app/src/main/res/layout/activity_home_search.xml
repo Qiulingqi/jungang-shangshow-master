@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/dp10"
+        android:paddingTop="@dimen/dp15">
+
+        <EditText
+            android:id="@+id/et_home_search_content"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp45"
+            android:layout_marginLeft="@dimen/dp15"
+            android:layout_marginRight="@dimen/dp15"
+            android:layout_weight="1"
+            android:background="@drawable/edit_back_shape"
+            android:gravity="center"
+            android:hint="ID/网红名/商家名"
+            android:textSize="14dp"
+            android:textColor="@color/gray_10"
+            android:textColorHint="@color/gray_10" />
+
+        <TextView
+            android:id="@+id/tv_search_close"
+            style="@style/TextStyle_SingleLine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dp15"
+            android:text="@string/cancel"
+            android:textColor="@color/gray_10"
+            android:textSize="@dimen/sp15" />
+
+    </LinearLayout>
+
+    <com.shangshow.showlive.widget.BottomScrollView
+        android:id="@+id/bsv_search"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TextStyle_SingleLine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp15"
+                android:layout_marginTop="@dimen/dp10"
+                android:text="@string/searchHot"
+                android:textColor="@color/gray_10"
+                android:textSize="@dimen/sp14" />
+
+            <com.shangshow.showlive.widget.FlowLayout
+                android:id="@+id/fl_home_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp30"
+                android:layout_marginRight="@dimen/dp15"
+                android:layout_marginTop="@dimen/dp15" />
+
+            <TextView
+                android:id="@+id/tv_search_item"
+                style="@style/TextStyle_SingleLine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dp15"
+                android:layout_marginTop="@dimen/dp10"
+                android:text="换一批"
+                android:layout_gravity="right"
+                android:textColor="@color/gray_10"
+                android:textSize="@dimen/sp14" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp45"
+                android:gravity="center_vertical"
+                android:text="@string/introduct"
+                android:paddingLeft="@dimen/dp15"
+                android:textColor="@color/gray_10"
+                android:textSize="@dimen/sp14" />
+
+            <com.shangshow.showlive.widget.ScrollerListView
+                android:id="@+id/searchResultList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:cacheColorHint="@color/transparent"
+                android:divider="@color/transparent"
+                android:scrollbars="none" />
+        </LinearLayout>
+    </com.shangshow.showlive.widget.BottomScrollView>
+</LinearLayout>

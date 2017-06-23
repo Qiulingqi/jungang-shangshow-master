@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.shangshow.showlive.common.widget.TitleBarView
+        android:id="@+id/home_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!--设置tabtitle-->
+    <com.shaojun.widget.tablayout.SlidingTabLayout
+        android:id="@+id/home_SlidingTabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_list_item_height_40"
+        android:layout_below="@+id/home_title_layout"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/common_activity_padding_10"
+        android:layout_marginTop="@dimen/common_activity_padding_10"
+        android:background="@color/layout_item_color"
+        tl:tl_divider_color="@color/default_stroke_color"
+        tl:tl_divider_padding="0dp"
+        tl:tl_divider_width="0dp"
+        tl:tl_indicator_color="@color/a1_color"
+        tl:tl_indicator_height="1.5dp"
+        tl:tl_indicator_width="180dp"
+        tl:tl_indicator_width_equal_title="true"
+        tl:tl_tab_padding="20dp"
+        tl:tl_tab_space_equal="true"
+        tl:tl_textSelectColor="@color/white"
+        tl:tl_textUnselectColor="@color/white"
+        tl:tl_textsize="@dimen/text_size_13"
+        tl:tl_underline_color="@color/default_stroke_color"
+        tl:tl_underline_height="1dp" />
+
+    <com.shangshow.showlive.common.widget.viewpager.CustomViewPager
+        android:id="@+id/my_bill_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/home_SlidingTabLayout"
+        android:layout_gravity="center"
+        android:persistentDrawingCache="animation" />
+
+</RelativeLayout>

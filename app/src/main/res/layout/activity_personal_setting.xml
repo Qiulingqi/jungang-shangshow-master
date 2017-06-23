@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.shangshow.showlive.common.widget.custom.ReboundScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_main_scene"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.shangshow.showlive.common.LogicView.UserInfoView
+                android:id="@+id/setting_memberinfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_menu_layout"
+                android:paddingBottom="@dimen/common_activity_padding_5" />
+
+
+            <RelativeLayout
+                android:id="@+id/setting_nick_name_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_list_item_height_50"
+                android:background="@color/layout_item_color"
+                android:paddingLeft="@dimen/common_activity_padding_10"
+                android:paddingRight="@dimen/common_activity_padding_10">
+
+                <TextView
+                    android:id="@+id/setting_nick_name_key"
+                    style="@style/TextViewGrayText_16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:text="@string/nickname" />
+
+                <TextView
+                    android:id="@+id/setting_nick_name"
+                    style="@style/TextViewGrayText_16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/common_activity_padding_16"
+                    android:layout_toRightOf="@+id/setting_nick_name_key"
+                    android:gravity="center_vertical" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/icon_arrows_right" />
+
+            </RelativeLayout>
+
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/default_stroke_color" />
+
+            <RelativeLayout
+                android:id="@+id/setting_gender_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_list_item_height_50"
+                android:background="@color/layout_item_color"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/common_activity_padding_10"
+                android:paddingRight="@dimen/common_activity_padding_10">
+
+                <TextView
+                    android:id="@+id/setting_gender_key"
+                    style="@style/TextViewGrayText_16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:text="@string/sex" />
+
+                <TextView
+                    android:id="@+id/setting_gender"
+                    style="@style/TextViewGrayText_16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/common_activity_padding_16"
+                    android:layout_toRightOf="@+id/setting_gender_key"
+                    android:gravity="center_vertical" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/icon_arrows_right" />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/default_stroke_color" />
+
+            <RelativeLayout
+                android:id="@+id/setting_address_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_list_item_height_50"
+                android:background="@color/layout_item_color"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/common_activity_padding_10"
+                android:paddingRight="@dimen/common_activity_padding_10">
+
+                <TextView
+                    style="@style/TextViewGrayText_16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:text="@string/place_of_receipt" />
+
+                <TextView
+                    android:id="@+id/setting_address"
+                    style="@style/TextViewGrayText_16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/common_activity_padding_16"
+                    android:gravity="center_vertical" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/icon_arrows_right" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/default_stroke_color" />
+
+            <RelativeLayout
+                android:id="@+id/setting_bindmobile_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_list_item_height_50"
+                android:background="@color/layout_item_color"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/common_activity_padding_10"
+                android:paddingRight="@dimen/common_activity_padding_10">
+
+                <TextView
+                    style="@style/TextViewGrayText_16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:background="@color/layout_item_color"
+                    android:gravity="center_vertical"
+                    android:text="@string/binding_mobile" />
+
+
+                <TextView
+                    android:id="@+id/setting_bindmobile"
+                    style="@style/TextViewGrayText_16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/common_activity_padding_16"
+                    android:gravity="center_vertical" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/icon_arrows_right" />
+            </RelativeLayout>
+
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/default_stroke_color" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_list_item_height_50"
+                android:background="@color/layout_item_color"
+                android:paddingLeft="@dimen/common_activity_padding_10">
+
+                <TextView
+                    style="@style/TextViewGrayText_16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:text="@string/receive_message" />
+
+                <com.shangshow.showlive.common.widget.custom.SwitchButton
+                    android:id="@+id/sb_ios"
+                    style="@style/MySwitchButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    app:kswAnimationDuration="300"
+                    app:kswBackDrawable="@drawable/ios_back_drawable"
+                    app:kswBackMeasureRatio="1.4"
+                    app:kswThumbDrawable="@drawable/ios_thumb_selector"
+                    app:kswThumbMarginBottom="-8dp"
+                    app:kswThumbMarginLeft="-5dp"
+                    app:kswThumbMarginRight="-5dp"
+                    app:kswThumbMarginTop="-2.5dp" />
+
+            </RelativeLayout>
+
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/default_stroke_color" />
+
+
+            <RelativeLayout
+                android:id="@+id/about_us_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_list_item_height_50"
+                android:background="@color/layout_item_color"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/common_activity_padding_10"
+                android:paddingRight="@dimen/common_activity_padding_10">
+
+                <TextView
+                    style="@style/TextViewGrayText_16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:background="@color/layout_item_color"
+                    android:gravity="center_vertical"
+                    android:text="@string/about_us" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/icon_arrows_right" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </com.shangshow.showlive.common.widget.custom.ReboundScrollView>
+
+    <com.shangshow.showlive.common.widget.custom.BaseButton
+        android:id="@+id/setting_login_out"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_list_item_height_40"
+        android:layout_alignParentBottom="true"
+        android:background="@color/a1_color"
+        android:gravity="center"
+        android:padding="@dimen/common_activity_padding_10"
+        android:text="@string/login_out"
+        android:textSize="12dp"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

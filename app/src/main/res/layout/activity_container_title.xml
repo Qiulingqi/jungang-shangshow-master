@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.shangshow.showlive.common.widget.TitleBarView
+        android:id="@+id/title_layout"
+        android:layout_width="match_parent"
+        android:background="@color/black_04"
+        android:layout_height="@dimen/common_title_layout_height" />
+
+    <!--<include-->
+    <!--android:id="@+id/title_layout"-->
+    <!--layout="@layout/comtmon_activity_titlebar" />-->
+
+
+</LinearLayout>

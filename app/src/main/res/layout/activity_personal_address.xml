@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.shangshow.showlive.common.widget.ultra.PtrHTFrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/address_ptr_framelayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.shangshow.showlive.widget.SwipeListView
+        android:id="@+id/address_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</com.shangshow.showlive.common.widget.ultra.PtrHTFrameLayout>
